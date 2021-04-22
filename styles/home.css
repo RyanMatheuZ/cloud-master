@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Lexend, sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.55);
+    border-radius: 1.5rem;
+    font-size: 5rem;
+    padding: 4rem 8rem;
+    cursor: default;
+}
+
+h3 {
+    color: #071A52;
+    font-size: 1.35rem;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+h2 {
+    color: #FFF;
+    border-bottom: 3px solid #FFF;
+    width: fit-content;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+header {
+    background-color: #071A52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 6.5rem;
+    padding: 0 5rem;
+}
+
+.logo {
+    width: 170px;
+    height: 80px;
+}
+
+nav a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 400;
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #FFF;
+}
+
+.section-initial {
+    background-image: url("../img/");
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+}
+
+.services {
+    background-color: #071A52;
+    width: 100%;
+    padding: 0 2.5rem;
+}
+
+.service-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 2.5rem 0;
+}
+
+.development, 
+.hosting, 
+.internet {
+    background-color: #FFF;
+    box-shadow: 0 0 25px #000;
+    border-radius: 1.5rem;
+    width: 300px;
+    height: 350px;
+    margin: 0 40px;
+    transition: 0.2s all;
+    cursor: pointer;
+}
+.development:hover { transform: translateY(-5%); transition: 0.2s all; }
+.hosting:hover { transform: translateY(-5%); transition: 0.2s all; }
+.internet:hover { transform: translateY(-5%); transition: 0.2s all; } 
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 25px;
+    margin: 1.5rem 0.5rem;
+}
+
+.button-see-more {
+    background-color: #071A52;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.button-see-more a {
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+.button-see-more:hover {
+    background-color: #071a52c5;
+}
