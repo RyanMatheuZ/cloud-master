@@ -17,25 +17,47 @@ h1 {
     background-color: rgba(0, 0, 0, 0.55);
     border-radius: 1.5rem;
     font-size: 5rem;
-    padding: 4rem 8rem;
+    text-align: center;
+    padding: 5%;
     cursor: default;
+}
+
+h2 {
+    width: fit-content;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.services h2 { 
+    color: #FFF; 
+    border-bottom: 3px solid #FFF; 
+}
+.greetings h2 { 
+    color: #071A52; 
+    border-bottom: 3px solid #071A52; 
 }
 
 h3 {
     color: #071A52;
     font-size: 1.35rem;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 0 0 1.5rem 0;
 }
 
-h2 {
-    color: #FFF;
-    border-bottom: 3px solid #FFF;
-    width: fit-content;
-    font-size: 3rem;
+h4 {
+    color: #000;
+    font-size: 2rem;
     text-align: center;
-    margin: 0 auto;
-    padding: 1rem 0;
+    margin: 2.5rem;
+}
+
+ul {
+    list-style: none;
+}
+li {
+    text-align: center;
+    padding: 0.5rem;
 }
 
 header {
@@ -48,7 +70,7 @@ header {
     padding: 0 5rem;
 }
 
-.logo {
+.logo, .footer-logo {
     width: 170px;
     height: 80px;
 }
@@ -60,7 +82,6 @@ nav a {
     text-decoration: none;
     padding: 1rem 2rem;
 }
-
 nav a:hover {
     border-bottom: 3px solid #FFF;
 }
@@ -80,13 +101,12 @@ nav a:hover {
     width: 100%;
     padding: 0 2.5rem;
 }
-
 .service-group {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    padding: 2.5rem 0;
+    padding: 3.5rem 0;
 }
 
 .development, 
@@ -96,14 +116,26 @@ nav a:hover {
     box-shadow: 0 0 25px #000;
     border-radius: 1.5rem;
     width: 300px;
-    height: 350px;
+    height: 400px;
     margin: 0 40px;
+    padding: 2rem;
     transition: 0.2s all;
     cursor: pointer;
 }
-.development:hover { transform: translateY(-5%); transition: 0.2s all; }
-.hosting:hover { transform: translateY(-5%); transition: 0.2s all; }
-.internet:hover { transform: translateY(-5%); transition: 0.2s all; } 
+.development:hover,
+.hosting:hover,
+.internet:hover { 
+    transform: translateY(-6%); 
+    transition: 0.2s all; 
+} 
+
+@media (max-width: 1200px) {
+    .development, 
+    .hosting, 
+    .internet {
+        margin-bottom: 2.5rem;
+    }
+}
 
 .icon {
     width: 100px;
@@ -115,14 +147,16 @@ nav a:hover {
     font-size: 1rem;
     text-align: center;
     line-height: 25px;
-    margin: 1.5rem 0.5rem;
+    width: 10rem;
+    margin: 0 auto;
+    padding: 1.5rem 0;
 }
 
 .button-see-more {
     background-color: #071A52;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     text-align: center;
-    width: 100px;
+    width: 9rem;
     margin: 0 auto;
     padding: 0.5rem;
 }
@@ -130,9 +164,43 @@ nav a:hover {
 .button-see-more a {
     color: #FFF;
     text-decoration: none;
-    display: block;
 }
 
-.button-see-more:hover {
-    background-color: #071a52c5;
+.greetings {
+    background-color: #FFF;
+    width: 100%;
+    padding: 0 2.5rem 2rem 2.5rem;
+}
+.greetings p {
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+}
+
+.more-information {
+    background-color: #2A2F35;
+    width: 100%;
+}
+
+.informations, .copyright {
+    padding: 1.5rem 0;
+}
+
+.informations, .social-networks {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.social-networks a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.copyright {
+    color: #FFF;
+    background-color: #191D20;
+    text-align: center;
+    width: 100%;
 }
