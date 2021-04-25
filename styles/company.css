@@ -32,6 +32,10 @@ h3 {
     width: fit-content;
 }
 
+a {
+    text-decoration: none;
+}
+
 span {
     color: #000;
     font-size: 1rem;
@@ -76,11 +80,10 @@ nav a {
     color: #FFF;
     font-size: 1.15rem;
     font-weight: 400;
-    text-decoration: none;
     padding: 1rem 2rem;
 }
 
-nav a:hover, nav a:first-child {
+nav a:hover, .current-page {
     border-bottom: 3px solid #FFF;
 }
 
@@ -156,7 +159,7 @@ nav a:hover, nav a:first-child {
 
 .phrase {
     margin: 0 auto;
-    padding: 2rem;
+    padding: 2rem 2rem 0 2rem;
     width: fit-content;
 }
 
@@ -194,8 +197,11 @@ nav a:hover, nav a:first-child {
 }
 
 .copyright {
-    color: #FFF;
     background-color: #191D20;
-    text-align: center;
     width: 100%;
+}
+
+.copyright p, a {
+    color: #FFF;
+    text-align: center;
 }

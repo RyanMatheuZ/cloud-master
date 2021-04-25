@@ -52,12 +52,8 @@ h4 {
     margin: 2.5rem;
 }
 
-ul {
-    list-style: none;
-}
-li {
-    text-align: center;
-    padding: 0.5rem;
+a {
+    text-decoration: none;
 }
 
 header {
@@ -98,16 +94,13 @@ nav a {
     color: #FFF;
     font-size: 1.15rem;
     font-weight: 400;
-    text-decoration: none;
     padding: 1rem 2rem;
 }
-nav a:hover {
+nav a:hover, .current-page {
     border-bottom: 3px solid #FFF;
 }
 
 .section-initial {
-    background-image: url("../img/");
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,7 +179,6 @@ nav a:hover {
 
 .button-see-more a {
     color: #FFF;
-    text-decoration: none;
 }
 
 .greetings {
@@ -222,8 +214,11 @@ nav a:hover {
 }
 
 .copyright {
-    color: #FFF;
     background-color: #191D20;
-    text-align: center;
     width: 100%;
+}
+
+.copyright p, a {
+    color: #FFF;
+    text-align: center;
 }
