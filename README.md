@@ -1,4 +1,4 @@
-<img  width="80"  src="./img/logo-cloud-master.svg"  alt="Logo CloudMaster">
+<img  width="80"  src="./img/cloud-master-logo.svg"  alt="Logo CloudMaster">
 
 # Cloud Master
 

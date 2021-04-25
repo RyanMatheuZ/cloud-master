@@ -23,9 +23,9 @@ h1 {
 }
 
 h2 {
-    width: fit-content;
     font-size: 3rem;
     text-align: center;
+    width: fit-content;
     margin: 0 auto;
     padding: 1rem 0;
 }
@@ -68,6 +68,25 @@ header {
     width: 100%;
     height: 6.5rem;
     padding: 0 5rem;
+}
+
+@media (max-width: 770px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    nav div {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    nav a {
+        border-bottom: 1px solid #FFF;
+    }
 }
 
 .logo, .footer-logo {
@@ -159,6 +178,10 @@ nav a:hover {
     width: 9rem;
     margin: 0 auto;
     padding: 0.5rem;
+}
+
+.button-see-more:hover {
+    background-color: #4060BE;
 }
 
 .button-see-more a {
