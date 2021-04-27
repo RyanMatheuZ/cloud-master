@@ -6,6 +6,7 @@
 
 html,
 body {
+    background-color: #EEE;
     font-family: Lexend, sans-serif;
     font-size: 16px;
     width: 100%;
@@ -88,7 +89,6 @@ nav a:hover, .current-page {
 }
 
 .our-history {
-    background-color: #FFF;
     display: flex;
     justify-content: space-evenly;
     flex-flow: row wrap;

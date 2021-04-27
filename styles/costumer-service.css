@@ -6,6 +6,7 @@
 
 html,
 body {
+    background-color: #EEE;
     font-family: Lexend, sans-serif;
     font-size: 16px;
     width: 100%;
@@ -13,13 +14,24 @@ body {
 }
 
 h1 {
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0.55);
-    border-radius: 1.5rem;
-    font-size: 5rem;
+    color: #071A52;
+    font-size: 2rem;
     text-align: center;
-    padding: 5%;
-    cursor: default;
+    width: fit-content;
+    margin: 0 auto 3rem auto;
+}
+
+h2 {
+    font-size: 1.35rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 0 1.5rem 0;
+}
+.telephone, .whatsapp h2 {
+    color: #FFF;
+}
+.support, .commercial h2{
+    color: #071A52;
 }
 
 a {
@@ -68,4 +80,126 @@ nav a {
 }
 nav a:hover, .current-page {
     border-bottom: 3px solid #FFF;
+}
+
+.support-types {
+    width: 100%;
+    padding: 4rem 0 6rem 0;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.telephone, 
+.whatsapp {
+    background-color: #071A52;
+}
+.support, 
+.commercial {
+    background-color: #FFF;
+}
+
+.telephone, 
+.whatsapp,
+.support,
+.commercial {
+    box-shadow: 0 0 10px #000;
+    border-radius: 1.5rem;
+    width: 270px;
+    height: 350px;
+    padding: 2rem 0 0 0;
+    transition: 0.2s all; 
+    cursor: pointer;
+}
+.telephone:hover, 
+.whatsapp:hover,
+.support:hover,
+.commercial:hover {
+    transform: translateY(-6%); 
+    transition: 0.2s all; 
+}
+
+@media (max-width: 1200px) {
+    .telephone, 
+    .whatsapp,
+    .support,
+    .commercial {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 1.5rem auto 0 auto;
+}
+
+.access {
+    background-color: #FFF;
+    border-radius: 1.5rem;
+    width: fit-content;
+    margin: 4.5rem auto 0 auto;
+    padding: 0.5rem;
+}
+
+.access:hover {
+    background-color: #BBB;
+}
+
+.access a {
+    color: #071A52;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+.contact-number p {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin: 4.5rem auto 0 auto;
+}
+
+.text-email p {
+    color: #071A52;
+    font-size: 17px;
+    text-align: center;
+    margin: 4.5rem auto 0 auto;
+}
+
+.more-information {
+    background-color: #2A2F35;
+    width: 100%;
+}
+
+.informations, .copyright {
+    padding: 1.5rem 0;
+}
+
+.informations, .social-networks {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.social-networks a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+}
+
+.copyright {
+    background-color: #191D20;
+    width: 100%;
+}
+
+.copyright p, a {
+    color: #FFF;
+    text-align: center;
 }
