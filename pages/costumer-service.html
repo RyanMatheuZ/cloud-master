@@ -32,11 +32,11 @@
     </header>
 
     <section class="support-types">
-        <h1>Atendimento exclusivo à clientes</h1>
+        <h2>Atendimento exclusivo à clientes</h2>
         
         <div class="contacts">
             <div class="support">
-                <h2>Suporte Técnico</h2>
+                <h3>Suporte Técnico</h3>
     
                 <div class="icon">
                     <img src="../img/support-icon.svg" alt="Ícone do suporte técnico">
@@ -48,7 +48,7 @@
             </div>
 
             <div class="telephone">
-                <h2>Telefone</h2>
+                <h3>Telefone</h3>
 
                 <div class="icon">
                     <img src="../img/telephone-icon.svg" alt="Ícone de telefone">
@@ -60,7 +60,7 @@
             </div>
 
             <div class="commercial">
-                <h2>Contato Comercial</h2>
+                <h3>Contato Comercial</h3>
     
                 <div class="icon">
                     <img src="../img/commercial-icon.svg" alt="Ícone do contato comercial">
@@ -72,7 +72,7 @@
             </div>
 
             <div class="whatsapp">
-                <h2>WhatsApp</h2>
+                <h3>WhatsApp</h3>
 
                 <div class="icon">
                     <img src="../img/whatsapp-logo.svg" alt="Logo WhatsApp">
@@ -83,6 +83,46 @@
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Formulário de Contato</h2>
+
+        <form id="form">
+            <div class="subscriber-name">
+                <label for="tname">Nome</label>
+                <input type="text" placeholder="Nome" id="tname">
+
+                <label for="tsurname">Sobrenome</label>
+                <input type="text" placeholder="Sobrenome" id="tsurname">
+            </div>          
+            
+            <div class="subscriber-contact">
+                <label for="temail">E-mail</label>
+                <input type="email" placeholder="E-mail" id="temail">
+
+                <label for="tphone">Telefone</label>
+                <input type="number" placeholder="Telefone" id="tphone">
+            </div>
+
+            <div class="box-department">
+                <label for="department">Departamento</label>
+                <select id="department">
+                    <option value="">Departamento</option>
+                    <option value="signature">- Assinatura</option>
+                    <option value="commercial">- Comercial</option>
+                    <option value="support">- Suporte Técnico</option>
+                </select>
+            </div>
+
+            <div class="box-message">
+                <textarea placeholder="Sua mensagem" id="message"></textarea>
+            </div>
+
+            <button type="submit">Enviar</button>
+
+            <div id="result"></div>
+        </form>
     </section>
 
     <footer>
@@ -102,6 +142,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/costumer-service.js"></script>
 </body>
 
 </html>

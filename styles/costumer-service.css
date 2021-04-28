@@ -13,25 +13,26 @@ body {
     height: 100%;
 }
 
-h1 {
-    color: #071A52;
-    font-size: 2rem;
+h2 {
+    font-size: 2.5rem;
     text-align: center;
     width: fit-content;
     margin: 0 auto 3rem auto;
 }
 
-h2 {
+.support-types h2 {
+    color: #071A52;
+}
+.contact-form h2 {
+    color: #FFF;
+}
+
+h3 {
+    color: #071A52;
     font-size: 1.35rem;
     font-weight: 500;
     text-align: center;
     padding: 0 0 1.5rem 0;
-}
-.telephone, .whatsapp h2 {
-    color: #FFF;
-}
-.support, .commercial h2{
-    color: #071A52;
 }
 
 a {
@@ -67,7 +68,8 @@ header {
     }
 }
 
-.logo, .footer-logo {
+.logo, 
+.footer-logo {
     width: 170px;
     height: 80px;
 }
@@ -78,7 +80,8 @@ nav a {
     font-weight: 400;
     padding: 1rem 2rem;
 }
-nav a:hover, .current-page {
+nav a:hover, 
+.current-page {
     border-bottom: 3px solid #FFF;
 }
 
@@ -96,18 +99,10 @@ nav a:hover, .current-page {
 }
 
 .telephone, 
-.whatsapp {
-    background-color: #071A52;
-}
-.support, 
-.commercial {
-    background-color: #FFF;
-}
-
-.telephone, 
 .whatsapp,
 .support,
 .commercial {
+    background-color: #FFF;
     box-shadow: 0 0 10px #000;
     border-radius: 1.5rem;
     width: 270px;
@@ -139,28 +134,9 @@ nav a:hover, .current-page {
     margin: 1.5rem auto 0 auto;
 }
 
-.access {
-    background-color: #FFF;
-    border-radius: 1.5rem;
-    width: fit-content;
-    margin: 4.5rem auto 0 auto;
-    padding: 0.5rem;
-}
-
-.access:hover {
-    background-color: #BBB;
-}
-
-.access a {
-    color: #071A52;
-    font-size: 17px;
-    font-weight: 600;
-    padding: 0.5rem;
-}
-
 .contact-number p {
-    color: #FFF;
-    font-size: 20px;
+    color: #071A52;
+    font-size: 22px;
     font-weight: 500;
     text-align: center;
     margin: 4.5rem auto 0 auto;
@@ -169,8 +145,136 @@ nav a:hover, .current-page {
 .text-email p {
     color: #071A52;
     font-size: 17px;
+    font-weight: 400;
     text-align: center;
     margin: 4.5rem auto 0 auto;
+}
+
+.contact-form {
+    background-color: #071A52;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+#form {
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+label { display: none; }
+
+input {
+    color: #071A52;
+    caret-color: #071A52;
+    background-color: #071a5200;
+    border: none;
+    border-bottom: 3px solid #071A52;
+    text-indent: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-family: Lexend, sans-serif;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+    outline-style: none;
+}
+
+::-webkit-inner-spin-button {
+    display: none;
+}
+
+.subscriber-name,
+.subscriber-contact,
+.box-department,
+.box-message {
+    margin: 1rem 0;
+}
+
+.box-department,
+.box-message {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .subscriber-name,
+    .subscriber-contact {
+        flex-direction: column;
+    }
+
+    #tname,
+    #tsurname,
+    #temail,
+    #tphone {
+        margin: 0 auto;
+    }
+
+    input {
+        display: block;
+        text-indent: 0;
+        text-align: center;
+        margin: 2rem 0;
+    }
+}
+
+#department {
+    color: #777;
+    background-color: #071a5200;
+    border: none;
+    border-bottom: 3px solid #071A52;
+    text-indent: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: Lexend, sans-serif;
+    width: 15rem;
+    padding: 0.5rem 0;
+    outline-style: none;
+}
+
+option {
+    color: #071A52;
+    background-color: #FFF;
+}
+
+#message {
+    color: #071A52;
+    background-color: #071a5200;
+    border: none;
+    border-bottom: 3px solid #071A52;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Lexend, sans-serif;
+    min-width: 15rem;
+    max-width: 15rem;
+    height: 5rem;
+    outline-style: none;
+}
+
+button {
+    color: #FFF;
+    background: #071A52;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 700;
+    font-family: Lexend, sans-serif;
+    width: 9rem;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.5rem;
+    outline-style: none;
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    width: fit-content;
+    margin: 1rem auto 0 auto;
+    padding: 0.5rem 0;
 }
 
 .more-information {
@@ -178,11 +282,13 @@ nav a:hover, .current-page {
     width: 100%;
 }
 
-.informations, .copyright {
+.informations, 
+.copyright {
     padding: 1.5rem 0;
 }
 
-.informations, .social-networks {
+.informations, 
+.social-networks {
     width: fit-content;
     margin: 0 auto;
 }
@@ -199,7 +305,15 @@ nav a:hover, .current-page {
     width: 100%;
 }
 
-.copyright p, a {
+.copyright p, 
+a {
     color: #FFF;
     text-align: center;
+}
+
+.message-error {
+    color: #D10000;
+}
+.field-error {
+    border-color: #D10000;
 }
