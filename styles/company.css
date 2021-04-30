@@ -27,9 +27,11 @@ h2 {
 
 h3 {
     color: #071A52;
+    border-bottom: 3px solid #071A52;
     font-size: 3rem;
     text-align: center;
     margin: 0 auto;
+    padding: 0.5rem 0;
     width: fit-content;
 }
 
@@ -72,7 +74,8 @@ header {
     }
 }
 
-.logo, .footer-logo {
+.logo, 
+.footer-logo {
     width: 170px;
     height: 80px;
 }
@@ -84,7 +87,8 @@ nav a {
     padding: 1rem 2rem;
 }
 
-nav a:hover, .current-page {
+nav a:hover, 
+.current-page {
     border-bottom: 3px solid #FFF;
 }
 
@@ -130,36 +134,44 @@ nav a:hover, .current-page {
     padding: 2.5rem;
 }
 
-.mission, .vision, .values {
+.mission, 
+.vision, 
+.values {
     width: 25rem;
 }
 
 @media (max-width: 1280px) {
-    .mission, .vision, .values {
+    .mission, 
+    .vision, 
+    .values {
         margin-bottom: 2rem;
     }
 }
 
-.img-mission, .img-vision, .img-values {
+.img-mission, 
+.img-vision, 
+.img-values {
     background-color: #FFF;
     border-radius: 50%;
     width: 15rem;
     margin: 2rem auto;
 }
 
-.text-mission, .text-vision, .text-values {
+.text-mission, 
+.text-vision, 
+.text-values {
     color: #FFF;
     text-align: center;
     margin: 1rem 0.5rem;
 }
 
 .message {
-    padding: 6rem 0;
+    padding: 5rem 0;
 }
 
 .phrase {
     margin: 0 auto;
-    padding: 2rem 2rem 0 2rem;
+    padding: 2rem;
     width: fit-content;
 }
 
@@ -167,12 +179,13 @@ nav a:hover, .current-page {
     font-size: 1.5rem;
     font-weight: 600;
     font-style: italic;
+    padding: 0.5rem;
 }
 
 .phrase p:last-child {
     font-style: italic;
     text-align: center;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 .more-information {
@@ -180,11 +193,13 @@ nav a:hover, .current-page {
     width: 100%;
 }
 
-.informations, .copyright {
+.informations, 
+.copyright {
     padding: 1.5rem 0;
 }
 
-.informations, .social-networks {
+.informations, 
+.social-networks {
     width: fit-content;
     margin: 0 auto;
 }
@@ -201,7 +216,8 @@ nav a:hover, .current-page {
     width: 100%;
 }
 
-.copyright p, a {
+.copyright p, 
+a {
     color: #FFF;
     text-align: center;
 }

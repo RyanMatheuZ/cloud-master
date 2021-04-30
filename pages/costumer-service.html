@@ -31,99 +31,101 @@
         </nav>
     </header>
 
-    <section class="support-types">
-        <h2>Atendimento exclusivo à clientes</h2>
-        
-        <div class="contacts">
-            <div class="support">
-                <h3>Suporte Técnico</h3>
-    
-                <div class="icon">
-                    <img src="../img/support-icon.svg" alt="Ícone do suporte técnico">
-                </div>
-    
-                <div class="text-email">
-                    <p>suporte@cmaster.com.br</p>
-                </div>
-            </div>
-
-            <div class="telephone">
-                <h3>Telefone</h3>
-
-                <div class="icon">
-                    <img src="../img/telephone-icon.svg" alt="Ícone de telefone">
-                </div>
-
-                <div class="contact-number">
-                    <p>(16) 86914-7262</p>
-                </div>
-            </div>
-
-            <div class="commercial">
-                <h3>Contato Comercial</h3>
-    
-                <div class="icon">
-                    <img src="../img/commercial-icon.svg" alt="Ícone do contato comercial">
-                </div>
-    
-                <div class="text-email">
-                    <p>comercial@cmaster.com.br</p>
-                </div>
-            </div>
-
-            <div class="whatsapp">
-                <h3>WhatsApp</h3>
-
-                <div class="icon">
-                    <img src="../img/whatsapp-logo.svg" alt="Logo WhatsApp">
-                </div>
-
-                <div class="contact-number">
-                    <p>(16) 98489-2846</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-form">
-        <h2>Formulário de Contato</h2>
-
-        <form id="form">
-            <div class="subscriber-name">
-                <label for="tname">Nome</label>
-                <input type="text" placeholder="Nome" id="tname">
-
-                <label for="tsurname">Sobrenome</label>
-                <input type="text" placeholder="Sobrenome" id="tsurname">
-            </div>          
+    <main>
+        <section class="support-types">
+            <h2>Atendimento exclusivo à clientes</h2>
             
-            <div class="subscriber-contact">
-                <label for="temail">E-mail</label>
-                <input type="email" placeholder="E-mail" id="temail">
+            <div class="contacts">
+                <div class="support">
+                    <h3>Suporte Técnico</h3>
+        
+                    <div class="icon">
+                        <img src="../img/support-icon.svg" alt="Ícone do suporte técnico">
+                    </div>
+        
+                    <div class="text-email">
+                        <p>suporte@cmaster.com.br</p>
+                    </div>
+                </div>
 
-                <label for="tphone">Telefone</label>
-                <input type="number" placeholder="Telefone" id="tphone">
+                <div class="telephone">
+                    <h3>Telefone</h3>
+
+                    <div class="icon">
+                        <img src="../img/telephone-icon.svg" alt="Ícone de telefone">
+                    </div>
+
+                    <div class="contact-number">
+                        <p>(16) 86914-7262</p>
+                    </div>
+                </div>
+
+                <div class="commercial">
+                    <h3>Contato Comercial</h3>
+        
+                    <div class="icon">
+                        <img src="../img/commercial-icon.svg" alt="Ícone do contato comercial">
+                    </div>
+        
+                    <div class="text-email">
+                        <p>comercial@cmaster.com.br</p>
+                    </div>
+                </div>
+
+                <div class="whatsapp">
+                    <h3>WhatsApp</h3>
+
+                    <div class="icon">
+                        <img src="../img/whatsapp-logo.svg" alt="Logo WhatsApp">
+                    </div>
+
+                    <div class="contact-number">
+                        <p>(16) 98489-2846</p>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="box-department">
-                <label for="department">Departamento</label>
-                <select id="department">
-                    <option value="">Departamento</option>
-                    <option value="signature">- Assinatura</option>
-                    <option value="commercial">- Comercial</option>
-                    <option value="support">- Suporte Técnico</option>
-                </select>
-            </div>
+        <section class="contact-form">
+            <h2>Formulário de Contato</h2>
 
-            <div class="box-message">
-                <textarea placeholder="Sua mensagem" id="message"></textarea>
-            </div>
+            <form id="form">
+                <div class="subscriber-name">
+                    <label for="tname">Nome</label>
+                    <input type="text" placeholder="Nome" id="tname">
 
-            <button type="submit">Enviar</button>
+                    <label for="tsurname">Sobrenome</label>
+                    <input type="text" placeholder="Sobrenome" id="tsurname">
+                </div>          
+                
+                <div class="subscriber-contact">
+                    <label for="temail">E-mail</label>
+                    <input type="email" placeholder="E-mail" id="temail">
 
-            <div id="result"></div>
-        </form>
-    </section>
+                    <label for="tphone">Telefone</label>
+                    <input type="number" placeholder="Telefone ou celular" id="tphone">
+                </div>
+
+                <div class="box-department">
+                    <label for="department">Departamento</label>
+                    <select id="department">
+                        <option value="">Departamento</option>
+                        <option value="signature">- Assinatura</option>
+                        <option value="commercial">- Comercial</option>
+                        <option value="support">- Suporte Técnico</option>
+                    </select>
+                </div>
+
+                <div class="box-message">
+                    <textarea placeholder="Sua mensagem" id="message"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+
+                <div id="result"></div>
+            </form>
+        </section>
+    </main>
 
     <footer>
         <div class="more-information">

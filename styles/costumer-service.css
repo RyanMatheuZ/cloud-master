@@ -17,14 +17,17 @@ h2 {
     font-size: 2.5rem;
     text-align: center;
     width: fit-content;
-    margin: 0 auto 3rem auto;
+    margin: 0 auto;
+    padding: 1.5rem 0 0.5rem 0;
 }
 
 .support-types h2 {
     color: #071A52;
+    border-bottom: 3px solid #071A52;
 }
 .contact-form h2 {
     color: #FFF;
+    border-bottom: 3px solid #FFF;
 }
 
 h3 {
@@ -87,7 +90,7 @@ nav a:hover,
 
 .support-types {
     width: 100%;
-    padding: 4rem 0 6rem 0;
+    padding: 0 2.5rem;
 }
 
 .contacts {
@@ -95,7 +98,7 @@ nav a:hover,
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
-    width: 100%;
+    padding: 2.5rem 0;
 }
 
 .telephone, 
@@ -108,7 +111,7 @@ nav a:hover,
     width: 270px;
     height: 350px;
     padding: 2rem 0 0 0;
-    transition: 0.2s all; 
+    transition: 0.3s ease-in-out;
     cursor: pointer;
 }
 .telephone:hover, 
@@ -116,7 +119,7 @@ nav a:hover,
 .support:hover,
 .commercial:hover {
     transform: translateY(-6%); 
-    transition: 0.2s all; 
+    transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 1200px) {
@@ -153,14 +156,14 @@ nav a:hover,
 .contact-form {
     background-color: #071A52;
     width: 100%;
-    padding: 2rem 0;
+    padding: 2.5rem 0;
 }
 
 #form {
     background-color: #FFF;
     border-radius: 0.5rem;
     width: fit-content;
-    margin: 0 auto;
+    margin: 2.5rem auto;
     padding: 1rem;
 }
 
@@ -170,8 +173,8 @@ input {
     color: #071A52;
     caret-color: #071A52;
     background-color: #071a5200;
-    border: none;
-    border-bottom: 3px solid #071A52;
+    border: 3px solid #071A52;
+    border-radius: 0.5rem;
     text-indent: 1rem;
     font-size: 1.25rem;
     font-weight: 500;
@@ -198,7 +201,7 @@ input {
     justify-content: center;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 610px) {
     .subscriber-name,
     .subscriber-contact {
         flex-direction: column;
@@ -208,22 +211,18 @@ input {
     #tsurname,
     #temail,
     #tphone {
-        margin: 0 auto;
-    }
-
-    input {
         display: block;
-        text-indent: 0;
         text-align: center;
-        margin: 2rem 0;
+        text-indent: 0;
+        margin: 1rem auto;
     }
 }
 
 #department {
     color: #777;
     background-color: #071a5200;
-    border: none;
-    border-bottom: 3px solid #071A52;
+    border: 3px solid #071A52;
+    border-radius: 0.5rem;
     text-indent: 2.5rem;
     font-size: 1.2rem;
     font-weight: 500;
@@ -241,14 +240,15 @@ option {
 #message {
     color: #071A52;
     background-color: #071a5200;
-    border: none;
-    border-bottom: 3px solid #071A52;
+    border: 3px solid #071A52;
+    border-radius: 0.5rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: Lexend, sans-serif;
     min-width: 15rem;
     max-width: 15rem;
     height: 5rem;
+    padding: 0.5rem;
     outline-style: none;
 }
 
@@ -260,10 +260,10 @@ button {
     font-weight: 700;
     font-family: Lexend, sans-serif;
     width: 9rem;
+    padding: 0.5rem;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    padding: 0.5rem;
     outline-style: none;
     cursor: pointer;
 }
@@ -273,7 +273,7 @@ button {
     font-size: 1.1rem;
     font-weight: 600;
     width: fit-content;
-    margin: 1rem auto 0 auto;
+    margin: 0.5rem auto;
     padding: 0.5rem 0;
 }
 
@@ -311,9 +311,12 @@ a {
     text-align: center;
 }
 
+.confirm {
+    color: #0D1;
+}
 .message-error {
-    color: #D10000;
+    color: #D10;
 }
 .field-error {
-    border-color: #D10000;
+    border-color: #D10;
 }

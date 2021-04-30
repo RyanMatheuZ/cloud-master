@@ -13,16 +13,6 @@ body {
     height: 100%;
 }
 
-h1 {
-    color: #FFF;
-    background-color: rgba(0, 0, 0, 0.55);
-    border-radius: 1.5rem;
-    font-size: 5rem;
-    text-align: center;
-    padding: 5%;
-    cursor: default;
-}
-
 h2 {
     font-size: 2.5rem;
     text-align: center;
@@ -30,27 +20,42 @@ h2 {
     margin: 0 auto;
     padding: 1.5rem 0 0.5rem 0;
 }
-.services h2 { 
-    color: #FFF; 
-    border-bottom: 3px solid #FFF; 
+.development-services h2 {
+    color: #071A52;
+    border-bottom: 3px solid #071A52;
 }
-.greetings h2 { 
-    color: #071A52; 
-    border-bottom: 3px solid #071A52; 
+.technologies h2 {
+    color: #FFF;
+    border-bottom: 3px solid #FFF;
 }
 
 h3 {
-    color: #071A52;
     font-size: 1.35rem;
     text-align: center;
     padding: 0 0 1.5rem 0;
 }
 
-h4 {
-    color: #000;
-    font-size: 2rem;
-    text-align: center;
-    margin: 2.5rem;
+.services h3 {
+    color: #071A52;
+}
+
+.html h3 {
+    color: #E44F25;
+}
+.css h3 {
+    color: #1572B7;
+}
+.js h3 {
+    color: #F5DD19;
+}
+.bootstrap h3 {
+    color: #5C4083;
+}
+.sass h3 {
+    color: #C96999;
+}
+.vue h3 {
+    color: #41B783;
 }
 
 a {
@@ -98,62 +103,70 @@ nav a {
     font-weight: 400;
     padding: 1rem 2rem;
 }
-nav a:hover, 
-.current-page {
+nav a:hover {
     border-bottom: 3px solid #FFF;
 }
 
-.section-initial {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.crumb {
+    background-color: #DDD;
     width: 100%;
-    height: 400px;
-    margin: 1rem 0;
+    padding: 1rem 0 1rem 5rem;
+}
+@media (max-width: 770px) {
+    .crumb {
+        padding-left: 0;
+    }
+
+    .path {
+        width: fit-content;
+        margin: 0 auto;
+    }
+}
+.crumb a {
+    color: #071A52;
+    font-weight: 600;
+}
+.crumb strong {
+    font-weight: 600;
+}
+.crumb a:hover {
+    font-style: italic;
 }
 
-.box-image-one {
-    width: 400px;
-    height: 300px;
-}
-
-.services {
-    background-color: #071A52;
+.development-services {
     width: 100%;
     padding: 0 2.5rem;
 }
-.service-group {
+
+.services {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     flex-flow: row wrap;
     padding: 2.5rem 0;
 }
 
-.development, 
-.hosting, 
-.internet {
+.construction,
+.maintenance {
     background-color: #FFF;
     box-shadow: 0 0 15px #000;
     border-radius: 1.5rem;
     width: 300px;
-    height: 400px;
+    height: 350px;
     margin: 0 40px;
     padding: 2rem;
     transition: 0.3s ease-in-out;
     cursor: pointer;
 }
-.development:hover,
-.hosting:hover,
-.internet:hover { 
+.construction:hover,
+.maintenance:hover {
     transform: translateY(-6%); 
     transition: 0.3s ease-in-out; 
-} 
+}
 
 @media (max-width: 1200px) {
-    .development, 
-    .hosting, 
-    .internet {
+    .construction, 
+    .maintenance {
         margin-bottom: 2.5rem;
     }
 }
@@ -173,31 +186,34 @@ nav a:hover,
     padding: 1.5rem 0;
 }
 
-.button-see-more {
+.technologies {
     background-color: #071A52;
-    border-radius: 1.5rem;
-    text-align: center;
-    width: 9rem;
-    margin: 0 auto;
-    padding: 0.5rem;
-}
-
-.button-see-more:hover {
-    background-color: #6C63FE;
-}
-
-.button-see-more a {
-    color: #FFF;
-}
-
-.greetings {
     width: 100%;
-    padding: 2rem 2.5rem 4rem 2.5rem;
+    padding: 0 2.5rem;
 }
-.greetings p {
-    color: #000;
-    text-align: center;
-    line-height: 30px;
+
+.technology-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 2.5rem 0;
+}
+
+.tech {
+    background-color: #FFF;
+    box-shadow: 0 0 10px #000;
+    border-radius: 1.5rem;
+    width: 300px;
+    height: 250px;
+    margin: 0 40px 30px 40px;
+    padding: 2rem;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.tech:hover {
+    transform: translateY(-6%);
+    transition: 0.3s ease-in-out; 
 }
 
 .more-information {
@@ -205,13 +221,11 @@ nav a:hover,
     width: 100%;
 }
 
-.informations, 
-.copyright {
+.informations, .copyright {
     padding: 1.5rem 0;
 }
 
-.informations, 
-.social-networks {
+.informations, .social-networks {
     width: fit-content;
     margin: 0 auto;
 }
@@ -228,8 +242,7 @@ nav a:hover,
     width: 100%;
 }
 
-.copyright p, 
-a {
+.copyright p, a {
     color: #FFF;
     text-align: center;
 }
