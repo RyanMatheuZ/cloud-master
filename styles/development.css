@@ -35,28 +35,25 @@ h3 {
     padding: 0 0 1.5rem 0;
 }
 
-.services h3 {
-    color: #071A52;
-}
+.services h3 { color: #071A52; }
 
-.html h3 {
-    color: #E44F25;
-}
-.css h3 {
-    color: #1572B7;
-}
-.js h3 {
-    color: #F5DD19;
-}
-.bootstrap h3 {
-    color: #5C4083;
-}
-.sass h3 {
-    color: #C96999;
-}
-.vue h3 {
-    color: #41B783;
-}
+.html h3 { color: #E44F25; }
+.html { border-bottom: 5px solid #E44F25; }
+
+.css h3 { color: #1572B7; }
+.css { border-bottom: 5px solid #1572B7; }
+
+.js h3 { color: #F5DD19; }
+.js { border-bottom: 5px solid #F5DD19; }
+
+.bootstrap h3 { color: #5C4083; }
+.bootstrap { border-bottom: 5px solid #5C4083; }
+
+.sass h3 { color: #C96999; }
+.sass { border-bottom: 5px solid #C96999; }
+
+.vue h3 { color: #41B783; }
+.vue { border-bottom: 5px solid #41B783; }
 
 a {
     text-decoration: none;
@@ -140,7 +137,7 @@ nav a:hover {
 
 .services {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
     padding: 2.5rem 0;
@@ -221,11 +218,13 @@ nav a:hover {
     width: 100%;
 }
 
-.informations, .copyright {
+.informations, 
+.copyright {
     padding: 1.5rem 0;
 }
 
-.informations, .social-networks {
+.informations, 
+.social-networks {
     width: fit-content;
     margin: 0 auto;
 }
@@ -242,7 +241,8 @@ nav a:hover {
     width: 100%;
 }
 
-.copyright p, a {
+.copyright p, 
+a {
     color: #FFF;
     text-align: center;
 }
