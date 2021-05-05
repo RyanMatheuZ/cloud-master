@@ -32,6 +32,21 @@ h2 {
     border-bottom: 3px solid #071A52;
 }
 
+.basic h3 { color: #F79F1F; }
+.basic { border-bottom: 5px solid #F79F1F; }
+.basic-button { background-color: #F79F1F; }
+.basic-button:hover { background-color: #D88B19; }
+
+.full h3 { color: #833471; }
+.full { border-bottom: 5px solid #833471; }
+.full-button { background-color: #833471; }
+.full-button:hover { background-color: #69275A; }
+
+.advanced h3 { color: #009432; }
+.advanced { border-bottom: 5px solid #009432; }
+.advanced-button { background-color: #009432; }
+.advanced-button:hover { background-color: #007A29; }
+
 .resources h3 {
     color: #FFF;
     font-size: 1.5rem;
@@ -86,8 +101,8 @@ h4 {
 .ruby h4 { color: #BF1703; }
 .ruby { border-bottom: 5px solid #BF1703; }
 
-.java h4 { color: #DE3334; }
-.java { border-bottom: 5px solid #DE3334; }
+.java h4 { color: #E66F01; }
+.java { border-bottom: 5px solid #E66F01; }
 
 .python h4 { color: #FFE634; }
 .python { border-bottom: 5px solid #FFE634; }
@@ -172,7 +187,7 @@ nav a:hover {
     padding: 0 2.5rem;
 }
 
-.types {
+.plans-types {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -221,18 +236,6 @@ nav a:hover {
     font-size: 2rem;
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-    margin: 0 0.5rem 0 0;
-}
-
-.icon-2 {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-}
-
 .description {
     width: fit-content;
     margin: 1rem auto;
@@ -243,6 +246,18 @@ nav a:hover {
     align-items: center;
     text-align: left;
     margin: 1.5rem 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.5rem 0 0;
+}
+
+.icon-2 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
 
 button {

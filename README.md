@@ -2,6 +2,6 @@
 
 # Cloud Master
 
-CloudMaster is a simple project, from a fictitious company with website development services, hosting and WiFi plans.
+CloudMaster is a personal project, about a fictional company with website development services, hosting plans and Wi-Fi.
 
 > Technologies: Adobe Illustrator 2021, HTML 5, CSS 3 and JavaScript (ECMAScript 2015+)

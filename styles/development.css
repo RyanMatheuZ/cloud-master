@@ -20,11 +20,12 @@ h2 {
     margin: 0 auto;
     padding: 1.5rem 0 0.5rem 0;
 }
-.development-services h2 {
+.development-services h2,
+.technologies h2 {
     color: #071A52;
     border-bottom: 3px solid #071A52;
 }
-.technologies h2 {
+.sites h2 {
     color: #FFF;
     border-bottom: 3px solid #FFF;
 }
@@ -36,6 +37,15 @@ h3 {
 }
 
 .services h3 { color: #071A52; }
+
+.construction h3 { color: #E7C048; }
+.construction { border-bottom: 5px solid #E7C048; }
+
+.prototyping h3 { color: #9DCE1D; }
+.prototyping { border-bottom: 5px solid #9DCE1D; }
+
+.maintenance h3 { color: #2A293B; }
+.maintenance { border-bottom: 5px solid #2A293B; }
 
 .html h3 { color: #E44F25; }
 .html { border-bottom: 5px solid #E44F25; }
@@ -52,8 +62,37 @@ h3 {
 .sass h3 { color: #C96999; }
 .sass { border-bottom: 5px solid #C96999; }
 
+.less h3 { color: #2A4D80; }
+.less { border-bottom: 5px solid #2A4D80; }
+
+.react h3 { color: #61DAFB; }
+.react { border-bottom: 5px solid #61DAFB; }
+
 .vue h3 { color: #41B783; }
 .vue { border-bottom: 5px solid #41B783; }
+
+.angular h3 { color: #DD0031;}
+.angular { border-bottom: 5px solid #DD0031; }
+
+.landing-page h3 { color: #59538A; }
+.landing-page { border-bottom: 5px solid #59538A; }
+.landing-page-button { background-color: #59538A; }
+.landing-page-button:hover { background-color: #9187D6; }
+
+.site-static h3 { color: #4D1E23; }
+.site-static { border-bottom: 5px solid #4D1E23; }
+.site-static-button { background-color: #4D1E23; }
+.site-static-button:hover { background-color: #75353E; }
+
+.spa h3 { color: #00C093; }
+.spa { border-bottom: 5px solid #00C093; }
+.spa-button { background-color: #00C093; }
+.spa-button:hover { background-color: #00f0B8; }
+
+.ecommerce h3 { color: #FA541E; }
+.ecommerce { border-bottom: 5px solid #FA541E; }
+.ecommerce-button { background-color: #FA541E; }
+.ecommerce-button:hover { background-color: #F37146; }
 
 a {
     text-decoration: none;
@@ -135,7 +174,9 @@ nav a:hover {
     padding: 0 2.5rem;
 }
 
-.services {
+.services,
+.sites-types,
+.technology-types {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,9 +185,12 @@ nav a:hover {
 }
 
 .construction,
-.maintenance {
+.prototyping,
+.maintenance,
+.plan,
+.tech {
     background-color: #FFF;
-    box-shadow: 0 0 15px #000;
+    box-shadow: 0 0 10px #000;
     border-radius: 1.5rem;
     width: 300px;
     height: 350px;
@@ -156,14 +200,30 @@ nav a:hover {
     cursor: pointer;
 }
 .construction:hover,
-.maintenance:hover {
+.prototyping:hover,
+.maintenance:hover,
+.plan:hover,
+.tech:hover {
     transform: translateY(-6%); 
     transition: 0.3s ease-in-out; 
 }
 
+.plan { 
+    width: 270px; 
+    height: auto;
+    margin: 0 20px;
+}
+
+.tech {
+    height: 250px;
+    margin: 0 40px 30px 40px;
+}
+
 @media (max-width: 1200px) {
-    .construction, 
-    .maintenance {
+    .construction,
+    .prototyping, 
+    .maintenance,
+    .plan {
         margin-bottom: 2.5rem;
     }
 }
@@ -172,6 +232,12 @@ nav a:hover {
     width: 100px;
     height: 100px;
     margin: 0 auto;
+}
+
+.icon-2 {
+    width: 20px;
+    height: 20px;
+    margin: 0 0.5rem 0 0;
 }
 
 .description {
@@ -183,34 +249,56 @@ nav a:hover {
     padding: 1.5rem 0;
 }
 
-.technologies {
+.description-2 {
+    width: fit-content;
+    margin: 1rem auto;
+} 
+
+.description-2 p {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 1.5rem 0;
+}
+
+.sites {
     background-color: #071A52;
     width: 100%;
     padding: 0 2.5rem;
 }
 
-.technology-group {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 2.5rem 0;
+.technologies {
+    width: 100%;
+    padding: 0 2.5rem;
 }
 
-.tech {
-    background-color: #FFF;
-    box-shadow: 0 0 10px #000;
-    border-radius: 1.5rem;
-    width: 300px;
-    height: 250px;
-    margin: 0 40px 30px 40px;
-    padding: 2rem;
-    transition: 0.3s ease-in-out;
-    cursor: pointer;
+.price {
+    width: fit-content;
+    margin: 0 auto;
 }
-.tech:hover {
-    transform: translateY(-6%);
-    transition: 0.3s ease-in-out; 
+
+.price p {
+    text-align: center;
+}
+
+.price p span {
+    font-size: 2rem;
+}
+
+button {
+    color: #FFF;
+    border-radius: 1rem;
+    border: none;
+    font-weight: 700;
+    font-family: Lexend, sans-serif;
+    width: 10rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    outline-style: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .more-information {
