@@ -165,8 +165,13 @@ nav a:hover {
     padding: 2.5rem 0;
 }
 
+.residential-plans {
+    padding: 0 1.5rem;
+}
+
 .business-plans {
     background-color: #071A52;
+    padding: 0 1.5rem;
 }
 
 .plan{

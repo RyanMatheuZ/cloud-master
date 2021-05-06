@@ -166,7 +166,7 @@ nav a:hover,
 }
 
 .message {
-    padding: 5rem 0;
+    padding: 5rem 0.5rem;
 }
 
 .phrase {
@@ -176,6 +176,7 @@ nav a:hover,
 }
 
 .phrase p:first-child {
+    text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
     font-style: italic;

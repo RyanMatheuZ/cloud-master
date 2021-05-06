@@ -156,7 +156,17 @@ nav a:hover,
 .contact-form {
     background-color: #071A52;
     width: 100%;
-    padding: 2.5rem 0;
+    padding: 2.5rem;
+}
+
+@media (max-width: 380px) {
+    .contact-form {
+        padding: 2.5rem 0;
+    }
+
+    .contact-form h2 {
+        width: min-content;
+    }
 }
 
 #form {
