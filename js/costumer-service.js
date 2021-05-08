@@ -1,4 +1,5 @@
-function onSubmit(event) {
+const form = document.querySelector('#form')
+form.addEventListener('submit', (event) => {
     event.preventDefault()
 
     const name = document.querySelector('#tname')
@@ -45,7 +46,4 @@ function onSubmit(event) {
     } else {
         result.innerHTML = '<p class="confirm">Mensagem enviada!</p>'
     }
-}
-
-const form = document.querySelector('#form')
-form.addEventListener('submit', onSubmit)
+})
