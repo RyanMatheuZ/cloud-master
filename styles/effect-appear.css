@@ -1,0 +1,31 @@
+/*
+  !! THIS IS NOT a LIBRARY or FRAMEWORK !!
+
+  This file (effect-appear.css), along with its complementation (effect-appear.js), 
+  was developed to apply effects to some elements and can be used in future 
+  implementations on the site.
+
+  * HOW TO APPLY?
+  Just apply the class corresponding to the desired effect along with your CSS rules, 
+  in one or more elements, considering your type of trigger, by SCREEN LOADING or SCROLL BAR.
+
+  * EXAMPLES WITH APPEAR-SLIP:
+  load--appear-slip: triggered the instant the screen is loaded.
+  scroll--appear-slip: triggered the instant the element is reached through the scroll bar.
+*/
+
+.effect--appear-fall {
+    opacity: 1;
+    transform: translateY(calc(-80px + 80px));
+    transition: 0.6s ease-in;
+}
+.effect--appear-grow {
+    opacity: 1;
+    transform: scale(1);
+    transition: 0.6s ease-in;
+}
+.effect--appear-slip {
+    opacity: 1;
+    transform: translateX(calc(-600px + 600px));
+    transition: 0.6s ease-in;
+}

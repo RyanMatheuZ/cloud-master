@@ -6,146 +6,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Suporte | CloudMaster</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="../styles/costumer-service.css">
+    <!-- Effects of appearing -->
+    <link rel="stylesheet" href="../styles/effect-appear.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts - Lexend -->
+    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/x-icon">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../img/cloud-master-logo.svg" alt="Logo CloudMaster">
+    <header class="header">
+        <div class="header__item">
+            <a class="header__link" href="../index.html">
+                <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
             </a>
         </div>
 
-        <nav>
-            <div>
-                <a href="../index.html">Início</a>
-                <a href="./company.html">Empresa</a>
-                <a class="current-page" href="./costumer-service.html">SAC</a>
+        <nav class="nav">
+            <div class="nav__item">
+                <a class="nav__link" href="../index.html">Início</a>
+                <a class="nav__link" href="../pages/company.html">Empresa</a>
+                <a class="nav__link nav__link--current-page" href="../pages/costumer-service.html">SAC</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <section class="support-types">
-            <h2>Atendimento exclusivo à clientes</h2>
+        <section class="support">
+            <header class="support-header">
+                <h2>Atendimento exclusivo à clientes</h2>
+                <hr class="hr--blue">
+            </header>
             
-            <div class="contacts">
-                <div class="support">
+            <section class="support-types">
+                <article class="support-card load--appear-fall">
                     <h3>Suporte Técnico</h3>
         
-                    <div class="icon">
-                        <img src="../img/support-icon.svg" alt="Ícone do suporte técnico">
+                    <div class="support-card__icon">
+                        <img src="../img/contacts-icon/support-icon.svg" alt="Ícone do suporte técnico">
                     </div>
         
-                    <div class="text-email">
+                    <div class="support-card__email">
                         <p>suporte@cmaster.com.br</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="telephone">
+                <article class="support-card load--appear-fall">
                     <h3>Telefone</h3>
 
-                    <div class="icon">
-                        <img src="../img/telephone-icon.svg" alt="Ícone de telefone">
+                    <div class="support-card__icon">
+                        <img src="../img/contacts-icon/telephone-icon.svg" alt="Ícone de telefone">
                     </div>
 
-                    <div class="contact-number">
+                    <div class="support-card__contact">
                         <p>(16) 86914-7262</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="commercial">
+                <article class="support-card load--appear-fall">
                     <h3>Contato Comercial</h3>
         
-                    <div class="icon">
-                        <img src="../img/commercial-icon.svg" alt="Ícone do contato comercial">
+                    <div class="support-card__icon">
+                        <img src="../img/contacts-icon/commercial-icon.svg" alt="Ícone do contato comercial">
                     </div>
         
-                    <div class="text-email">
+                    <div class="support-card__email">
                         <p>comercial@cmaster.com.br</p>
                     </div>
-                </div>
+                </article>
 
-                <div class="whatsapp">
+                <article class="support-card load--appear-fall">
                     <h3>WhatsApp</h3>
 
-                    <div class="icon">
-                        <img src="../img/whatsapp-logo.svg" alt="Logo WhatsApp">
+                    <div class="support-card__icon">
+                        <img src="../img/contacts-icon/whatsapp-logo.svg" alt="Logo WhatsApp">
                     </div>
 
-                    <div class="contact-number">
+                    <div class="support-card__contact">
                         <p>(16) 98489-2846</p>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </section>
 
         <section class="contact-form">
-            <h2>Entre em Contato</h2>
+            <header class="contact-form-header">
+                <h2>Entre em Contato</h2>
+                <hr class="hr--white">
+            </header>
 
-            <form id="form">
-                <div class="subscriber-name">
+            <form id="form" class="form scroll--appear-grow">
+                <article class="form-subscriber-name">
                     <label for="tname">Nome</label>
-                    <input type="text" placeholder="Nome" id="tname">
+                    <input type="text" placeholder="Nome" id="tname" class="form-field field--margin">
 
                     <label for="tsurname">Sobrenome</label>
-                    <input type="text" placeholder="Sobrenome" id="tsurname">
-                </div>          
+                    <input type="text" placeholder="Sobrenome" id="tsurname" class="form-field field--margin">
+                </article>          
                 
-                <div class="subscriber-contact">
+                <article class="form-subscriber-contact">
                     <label for="temail">E-mail</label>
-                    <input type="email" placeholder="E-mail" id="temail">
+                    <input type="email" placeholder="E-mail" id="temail" class="form-field field--margin">
 
                     <label for="tphone">Telefone</label>
-                    <input type="number" placeholder="Telefone ou celular" id="tphone">
-                </div>
+                    <input type="number" placeholder="Telefone ou celular" id="tphone" class="form-field field--margin">
+                </article>
 
-                <div class="box-department">
+                <article class="form-box-department form-box--flex-center">
                     <label for="department">Departamento</label>
-                    <select id="department">
-                        <option value="">Departamento</option>
-                        <option value="signature">- Assinatura</option>
-                        <option value="commercial">- Comercial</option>
-                        <option value="support">- Suporte Técnico</option>
+                    <select id="department" class="form-department field--margin">
+                        <option class="form-box-department__option" value="">Departamento</option>
+                        <option class="form-box-department__option" value="signature">- Assinatura</option>
+                        <option class="form-box-department__option" value="commercial">- Comercial</option>
+                        <option class="form-box-department__option" value="support">- Suporte Técnico</option>
                     </select>
-                </div>
+                </article>
 
-                <div class="box-message">
-                    <textarea placeholder="Sua mensagem" id="message"></textarea>
-                </div>
+                <article class="form-box-message form-box--flex-center">
+                    <textarea placeholder="Sua mensagem" id="message" class="form-box-message__message field--margin"></textarea>
+                </article>
 
-                <button type="submit">Enviar</button>
+                <button class="form-button" type="submit">Enviar</button>
 
-                <div id="result"></div>
+                <div id="result" class="form-result"></div>
             </form>
         </section>
     </main>
 
-    <footer>
-        <div class="more-information">
-            <div class="informations">
-                <a href="../index.html"><img class="footer-logo" src="../img/cloud-master-black-white-logo.svg" alt="Logo CloudMaster"></a>
+    <footer class="footer">
+        <article class="footer-information">
+            <a class="footer-information__link" href="index.html">
+                <img class="footer-information__logo" src="../img/logo/cloud-master-black-white-logo.svg" alt="Logo CloudMaster">
+            </a>
 
-                <div class="social-networks">
-                    <a target="_blank" href="https://www.facebook.com/rya.matheus.9"><img src="../img/facebook-logo.svg" alt="Logo Facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/isryanmatheus"><img src="../img/instagram-logo.svg" alt="Logo Instagram"></a>
-                    <a target="_blank" href="https://github.com/RyanMatheuZ"><img src="../img/github-logo.svg" alt="Logo GitHub"></a>
-                </div>
+            <div class="social-networks">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                    <img src="../img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                    <img src="../img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                    <img src="../img/contacts-icon/github-logo.svg" alt="Logo GitHub">
+                </a>
             </div>
+        </article>
 
-            <div class="copyright">
-                <p><a target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira</p>
-            </div>
-        </div>
+        <article class="copyright">
+            <p class="copyright__text">
+                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+            </p>
+        </article>
     </footer>
 
+    <!-- Form validation -->
     <script src="../js/costumer-service.js"></script>
+    <!-- Effects of appearing -->
+    <script src="../js/effect-appear.js"></script>
 </body>
 
 </html>

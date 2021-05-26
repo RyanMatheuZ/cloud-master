@@ -6,120 +6,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início | CloudMaster</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./styles/home.css">
+    <!-- Effects of appearing -->
+    <link rel="stylesheet" href="./styles/effect-appear.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts - Lexend -->
+    <link rel="shortcut icon" href="./img/logo/favicon.svg" type="image/x-icon">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="0PhQEbiFIY9XvPOAvADjVQiJm8tDioAWszmZNRrHPJA"/>
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="./index.html">
-                <img src="./img/cloud-master-logo.svg" alt="Logo CloudMaster">
+    <header class="header">
+        <div class="header__item">
+            <a class="header__link" href="./index.html">
+                <img src="./img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
             </a>
         </div>
 
-        <nav>
-            <div>
-                <a class="current-page" href="./index.html">Início</a>
-                <a href="./pages/company.html">Empresa</a>
-                <a href="./pages/costumer-service.html">SAC</a>
+        <nav class="nav">
+            <div class="nav__item">
+                <a class="nav__link nav__link--current-page" href="./index.html">Início</a>
+                <a class="nav__link" href="./pages/company.html">Empresa</a>
+                <a class="nav__link" href="./pages/costumer-service.html">SAC</a>
             </div>
         </nav>
     </header>
 
     <section class="section-initial">
-        <div class="box-image-one">
-            <img src="./img/girl-image.svg" alt="Garota no computador">
-        </div>
+        <article class="section-initial__item">
+            <img src="./img/images/girl.svg" alt="Garota no computador" class="section-initial__img load--appear-grow">
+        </article>
     </section>
 
     <main>
-        <section class="services">
-            <h2>Serviços</h2>
+        <section class="service">
+            <header class="service-header">
+                <h2>Serviços</h2>
+                <hr class="hr--white">
+            </header>
 
-            <div class="service-group">
-                <div class="development">
+            <section class="service-group">
+                <article class="service-group__item scroll--appear-fall">
                     <h3>Desenvolvimento</h3>
 
-                    <div class="icon">
-                        <img src="./img/dev-icon.svg" alt="Ícone de desenvolvimento">
+                    <div class="service-group__icon">
+                        <img src="./img/services-icon/dev-icon.svg" alt="Ícone de desenvolvimento">
                     </div>
 
-                    <div class="description">
+                    <div class="service-group__description">
                         <p>Sites de qualidade! Usando as mais novas e sofisticadas tecnologias</p>
                     </div>
 
-                    <div class="button-see-more">
+                    <div class="service-group__button-see-more">
                         <a href="./pages/development.html">Veja mais</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="hosting">
+                <article class="service-group__item scroll--appear-fall">
                     <h3>Hospedagem</h3>
 
-                    <div class="icon">
-                        <img src="./img/hosting-icon.svg" alt="Ícone de hospedagem">
+                    <div class="service-group__icon">
+                        <img src="./img/services-icon/hosting-icon.svg" alt="Ícone de hospedagem">
                     </div>
 
-                    <div class="description">
+                    <div class="service-group__description">
                         <p>Seu site na CloudMaster tem maior estabilidade e desempenho</p>
                     </div>
 
-                    <div class="button-see-more">
+                    <div class="service-group__button-see-more">
                         <a href="./pages/hosting.html">Veja mais</a>
                     </div>
-                </div>
+                </article>
 
-                <div class="internet">
+                <article class="service-group__item scroll--appear-fall">
                     <h3>Planos Wi-Fi</h3>
 
-                    <div class="icon">
-                        <img src="./img/wifi-icon.svg" alt="Ícone de wi-fi">
+                    <div class="service-group__icon">
+                        <img src="./img/services-icon/wifi-icon.svg" alt="Ícone de wi-fi">
                     </div>
 
-                    <div class="description">
+                    <div class="service-group__description">
                         <p>Wi-Fi veloz e com qualidade, usando sofisticados equipamentos</p>
                     </div>
 
-                    <div class="button-see-more">
+                    <div class="service-group__button-see-more">
                         <a href="./pages/plans.html">Veja mais</a>
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </section>
     </main>
 
-    <section class="greetings">
-        <h2>Seja Bem Vindo!</h2>
+    <section class="greetings scroll--appear-slip">
+        <header class="greetings-header">
+            <h2>Seja Bem Vindo!</h2>
+            <hr class="hr--blue">
+        </header>
 
         <h4>Veja nosso site e encotre a sua solução</h4>
 
-        <p>A CloudMaster tem a solução para deixar você ou seu négocio online 24 horas por dia.</p>
+        <p class="greetings__text">A CloudMaster tem a solução para deixar você ou seu négocio online 24 horas por dia.</p>
 
-        <p>Faça um site de qualidade e tenha resultados.</p>
+        <p class="greetings__text">Faça um site de qualidade e tenha resultados.</p>
     </section>
 
-    <footer>
-        <div class="more-information">
-            <div class="informations">
-                <a href="index.html"><img class="footer-logo" src="./img/cloud-master-black-white-logo.svg" alt="Logo CloudMaster"></a>
+    <footer class="footer">
+        <article class="footer-information">
+            <a class="footer-information__link" href="index.html">
+                <img class="footer-information__logo" src="./img/logo/cloud-master-black-white-logo.svg" alt="Logo CloudMaster">
+            </a>
 
-                <div class="social-networks">
-                    <a target="_blank" href="https://www.facebook.com/rya.matheus.9"><img src="./img/facebook-logo.svg" alt="Logo Facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/isryanmatheus"><img src="./img/instagram-logo.svg" alt="Logo Instagram"></a>
-                    <a target="_blank" href="https://github.com/RyanMatheuZ"><img src="./img/github-logo.svg" alt="Logo GitHub"></a>
-                </div>
+            <div class="social-networks">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                    <img src="./img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                    <img src="./img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                    <img src="./img/contacts-icon/github-logo.svg" alt="Logo GitHub">
+                </a>
             </div>
+        </article>
 
-            <div class="copyright">
-                <p><a target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira</p>
-            </div>
-        </div>
+        <article class="copyright">
+            <p class="copyright__text">
+                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+            </p>
+        </article>
     </footer>
+
+    <!-- Effects of appearing -->
+    <script src="./js/effect-appear.js"></script>
 </body>
 
 </html>

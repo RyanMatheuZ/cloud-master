@@ -6,298 +6,320 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planos Wi-Fi | CloudMaster</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="../styles/plans.css">
+    <!-- Effects of appearing -->
+    <link rel="stylesheet" href="../styles/effect-appear.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts - Lexend -->
+    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/x-icon">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../img/cloud-master-logo.svg" alt="Logo CloudMaster">
+    <header class="header">
+        <div class="header__item">
+            <a class="header__link" href="../index.html">
+                <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
             </a>
         </div>
 
-        <nav>
-            <div>
-                <a href="../index.html">Início</a>
-                <a href="./company.html">Empresa</a>
-                <a href="./costumer-service.html">SAC</a>
+        <nav class="nav">
+            <div class="nav__item">
+                <a class="nav__link nav__link--current-page" href="../index.html">Início</a>
+                <a class="nav__link" href="../pages/company.html">Empresa</a>
+                <a class="nav__link" href="../pages/costumer-service.html">SAC</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="crumb">
-            <div class="path">
-                <a href="../index.html">Início</a> <strong>></strong> <a href="./plans.html">Planos Wi-Fi</a>
+        <section class="crumb">
+            <div class="crumb__item">
+                <a class="crumb__link" href="../index.html">Início</a> <strong class="crumb--strong-600">></strong> <a class="crumb__link" href="./plans.html">Planos Wi-Fi</a>
             </div>
-        </div>
-
-        <section class="residential-plans">
-            <h2>Planos Residenciais</h2>
-
-            <div class="plans-types">
-                <div class="basic plan">
-                    <h3>Básico</h3>
-
-                    <div class="price">
-                        <p>R$ <span>64,99</span>/mês</p>
-                    </div>
-
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
-                            50 MB de Download
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            25 MB de Upload
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
-                            100% Fibra Óptica
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
-                            Suporte Gratuito
-                        </p>
-                    </div>
-
-                    <button class="basic-button">Contrate</button>
-                </div>
-
-                <div class="full plan">
-                    <h3>Pleno</h3>
-
-                    <div class="price">
-                        <p>R$ <span>79,99</span>/mês</p>
-                    </div>
-
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
-                            100 MB de Download
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            50 MB de Upload
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
-                            100% Fibra Óptica
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
-                            Suporte Gratuito
-                        </p>
-                    </div>
-
-                    <button class="full-button">Contrate</button>
-                </div>
-
-                <div class="advanced plan">
-                    <h3>Avançado</h3>
-
-                    <div class="price">
-                        <p>R$ <span>98,99</span>/mês</p>
-                    </div>
-
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
-                            200 MB de Download
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            100 MB de Upload
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
-                            100% Fibra Óptica
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
-                            Suporte Gratuito
-                        </p>
-                    </div>
-
-                    <button class="advanced-button">Contrate</button>
-                </div>
-
-                <div class="super plan">
-                    <h3>Super</h3>
-
-                    <div class="price">
-                        <p>R$ <span>127,99</span>/mês</p>
-                    </div>
-
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
-                            300 MB de Download
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            150 MB de Upload
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
-                            100% Fibra Óptica
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
-                            Suporte Gratuito
-                        </p>
-                    </div>
-
-                    <button class="super-button">Contrate</button>
-                </div>
         </section>
 
-        <section class="business-plans">
-            <h2>Planos Empresariais</h2>
+        <section class="plans-residential">
+            <header class="plans-residential-header">
+                <h2>Planos Residenciais</h2>
+                <hr class="hr--blue">
+            </header>
 
-            <div class="plans-types">
-                <div class="initial plan">
-                    <h3>Inicial</h3>
+            <section class="plans-residential-types">
+                <article class="card-plans theme--basic load--appear-fall">
+                    <h3>Básico</h3>
 
-                    <div class="price">
-                        <p>R$ <span>75,99</span>/mês</p>
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">64,99</span>/mês</p>
                     </div>
 
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
                             50 MB de Download
                         </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            50 MB de Upload
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            25 MB de Upload
                         </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
                             100% Fibra Óptica
                         </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
-                            Sup. em até 7h Úteis
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                            Suporte Gratuito
                         </p>
                     </div>
 
-                    <button class="initial-button">Contrate</button>
-                </div>
+                    <button class="card-plans-button theme--basic-button">Contrate</button>
+                </article>
 
-                <div class="intermediary plan">
-                    <h3>Intermediário</h3>
+                <article class="card-plans theme--full load--appear-fall">
+                    <h3>Pleno</h3>
 
-                    <div class="price">
-                        <p>R$ <span>98,99</span>/mês</p>
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">79,99</span>/mês</p>
                     </div>
 
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
                             100 MB de Download
                         </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            90 MB de Upload
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            50 MB de Upload
                         </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
                             100% Fibra Óptica
                         </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
-                            Sup. em até 7h Úteis
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                            Suporte Gratuito
                         </p>
                     </div>
 
-                    <button class="intermediary-button">Contrate</button>
-                </div>
+                    <button class="card-plans-button theme--full-button">Contrate</button>
+                </article>
 
-                <div class="master plan">
-                    <h3>Mestre</h3>
+                <article class="card-plans theme--advanced load--appear-fall">
+                    <h3>Avançado</h3>
 
-                    <div class="price">
-                        <p>R$ <span>118,99</span>/mês</p>
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">98,99</span>/mês</p>
                     </div>
 
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
                             200 MB de Download
                         </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            150 MB de Upload
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            100 MB de Upload
                         </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
                             100% Fibra Óptica
                         </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
-                            Sup. em até 7h Úteis
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                            Suporte Gratuito
                         </p>
                     </div>
 
-                    <button class="master-button">Contrate</button>
-                </div>
+                    <button class="card-plans-button theme--advanced-button">Contrate</button>
+                </article>
 
-                <div class="ultra plan">
-                    <h3>Ultra</h3>
+                <article class="card-plans theme--super load--appear-fall">
+                    <h3>Super</h3>
 
-                    <div class="price">
-                        <p>R$ <span>148,99</span>/mês</p>
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">127,99</span>/mês</p>
                     </div>
 
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/arrow-down-icon.svg" alt="Ícone de Download">
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
                             300 MB de Download
                         </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-up-icon.svg" alt="Ícone de Upload">
-                            200 MB de Upload
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            150 MB de Upload
                         </p>
-                        <p>
-                            <img class="icon" src="../img/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
                             100% Fibra Óptica
                         </p>
-                        <p>
-                            <img class="icon" src="../img/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                            Suporte Gratuito
+                        </p>
+                    </div>
+
+                    <button class="card-plans-button theme--super-button">Contrate</button>
+                </article>
+            </section>
+        </section>
+
+        <section class="plans-business">
+            <header class="plans-business-header">
+                <h2>Planos Empresariais</h2>
+                <hr class="hr--white">
+            </header>
+
+            <section class="plans-business-types">
+                <article class="card-plans theme--initial scroll--appear-fall">
+                    <h3>Inicial</h3>
+
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">75,99</span>/mês</p>
+                    </div>
+
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
+                            50 MB de Download
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            50 MB de Upload
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                            100% Fibra Óptica
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
                             Sup. em até 7h Úteis
                         </p>
                     </div>
 
-                    <button class="ultra-button">Contrate</button>
-                </div>
+                    <button class="card-plans-button theme--initial-button">Contrate</button>
+                </article>
+
+                <article class="card-plans theme--intermediary scroll--appear-fall">
+                    <h3>Intermediário</h3>
+
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">98,99</span>/mês</p>
+                    </div>
+
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
+                            100 MB de Download
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            90 MB de Upload
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                            100% Fibra Óptica
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                            Sup. em até 7h Úteis
+                        </p>
+                    </div>
+
+                    <button class="card-plans-button theme--intermediary-button">Contrate</button>
+                </article>
+
+                <article class="card-plans theme--master scroll--appear-fall">
+                    <h3>Mestre</h3>
+
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">118,99</span>/mês</p>
+                    </div>
+
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
+                            200 MB de Download
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            150 MB de Upload
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                            100% Fibra Óptica
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                            Sup. em até 7h Úteis
+                        </p>
+                    </div>
+
+                    <button class="card-plans-button theme--master-button">Contrate</button>
+                </article>
+
+                <article class="card-plans theme--ultra scroll--appear-fall">
+                    <h3>Ultra</h3>
+
+                    <div class="card-plans__price">
+                        <p class="card-plans__price--center">R$ <span class="card-plans__price--font2">148,99</span>/mês</p>
+                    </div>
+
+                    <div class="card-plans__description">
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-down-icon.svg" alt="Ícone de Download">
+                            300 MB de Download
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/arrow-up-icon.svg" alt="Ícone de Upload">
+                            200 MB de Upload
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/optical-fiber.svg" alt="Íconde de Fibra Óptica">
+                            100% Fibra Óptica
+                        </p>
+                        <p class="card-plans__text">
+                            <img class="card-plans__icon" src="../img/services-icon/tool-icon.svg" alt="Ícone de Suporte Gratuito">
+                            Sup. em até 7h Úteis
+                        </p>
+                    </div>
+
+                    <button class="card-plans-button theme--ultra-button">Contrate</button>
+                </article>
+            </section>
         </section>
     </main>
 
-    <footer>
-        <div class="more-information">
-            <div class="informations">
-                <a href="../index.html"><img class="footer-logo" src="../img/cloud-master-black-white-logo.svg" alt="Logo CloudMaster"></a>
+    <footer class="footer">
+        <article class="footer-information">
+            <a class="footer-information__link" href="index.html">
+                <img class="footer-information__logo" src="../img/logo/cloud-master-black-white-logo.svg" alt="Logo CloudMaster">
+            </a>
 
-                <div class="social-networks">
-                    <a target="_blank" href="https://www.facebook.com/rya.matheus.9"><img src="../img/facebook-logo.svg" alt="Logo Facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/isryanmatheus"><img src="../img/instagram-logo.svg" alt="Logo Instagram"></a>
-                    <a target="_blank" href="https://github.com/RyanMatheuZ"><img src="../img/github-logo.svg" alt="Logo GitHub"></a>
-                </div>
+            <div class="social-networks">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                    <img src="../img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                    <img src="../img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                    <img src="../img/contacts-icon/github-logo.svg" alt="Logo GitHub">
+                </a>
             </div>
+        </article>
 
-            <div class="copyright">
-                <p><a target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira</p>
-            </div>
-        </div>
+        <article class="copyright">
+            <p class="copyright__text">
+                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+            </p>
+        </article>
     </footer>
+
+    <!-- Effects of appearing -->
+    <script src="../js/effect-appear.js"></script>
 </body>
 
 </html>

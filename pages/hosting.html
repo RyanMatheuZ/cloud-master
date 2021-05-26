@@ -6,237 +6,257 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospedagem | CloudMaster</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="../styles/hosting.css">
+    <!-- Effects of appearing -->
+    <link rel="stylesheet" href="../styles/effect-appear.css">
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts - Lexend -->
+    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/x-icon">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="../index.html">
-                <img src="../img/cloud-master-logo.svg" alt="Logo CloudMaster">
+    <header class="header">
+        <div class="header__item">
+            <a class="header__link" href="../index.html">
+                <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
             </a>
         </div>
 
-        <nav>
-            <div>
-                <a href="../index.html">Início</a>
-                <a href="./company.html">Empresa</a>
-                <a href="./costumer-service.html">SAC</a>
+        <nav class="nav">
+            <div class="nav__item">
+                <a class="nav__link nav__link--current-page" href="../index.html">Início</a>
+                <a class="nav__link" href="../pages/company.html">Empresa</a>
+                <a class="nav__link" href="../pages/costumer-service.html">SAC</a>
             </div>
         </nav>
     </header>
 
     <main>
-        <div class="crumb">
-            <div class="path">
-                <a href="../index.html">Início</a> <strong>></strong> <a href="./hosting.html">Hospedagem</a>
-            </div>
-        </div>
-
-        <section class="plans">
-            <h2>Planos</h2>
-
-            <div class="plans-types">
-                <div class="basic">
-                    <h3>Básico</h3>
-
-                    <div class="price">
-                        <p>R$ <span>18,99</span>/mês</p>
-                    </div>
-
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/laptop-icon.svg" alt="Ícone do laptop">
-                            1 Site
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/savedisk-icon.svg" alt="Ícone de disquete">
-                            250 GB
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-icon.svg" alt="Ícone do tráfego">
-                            Tráfego Ilimitado
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/domain-icon.svg" alt="Ícone de domínio">
-                            25 Domínios
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/ssl-icon.svg" alt="Ícone de SSL">
-                            Cert. SSL Grátis
-                        </p>
-                    </div>
-
-                    <button class="basic-button">Contrate</button>
-                </div>
-
-                <div class="full">
-                    <h3>Pleno</h3>
-
-                    <div class="price">
-                        <p>R$ <span>23,99</span>/mês</p>
-                    </div>
-
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/laptop-icon.svg" alt="Ícone do laptop">
-                            3 Sites
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/savedisk-icon.svg" alt="Ícone disquete">
-                            500 GB
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-icon.svg" alt="Ícone de seta">
-                            Tráfego Ilimitado
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/domain-icon.svg" alt="Ícone de domínio">
-                            50 Domínios
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/ssl-icon.svg" alt="Ícone de SSL">
-                            Cert. SSL Grátis
-                        </p>
-                    </div>
-
-                    <button class="full-button">Contrate</button>
-                </div>
-
-                <div class="advanced">
-                    <h3>Avançado</h3>
-
-                    <div class="price">
-                        <p>R$ <span>31,99</span>/mês</p>
-                    </div>
-
-                    <div class="description">
-                        <p>
-                            <img class="icon" src="../img/laptop-icon.svg" alt="Ícone do laptop">
-                            5 Sites
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/savedisk-icon.svg" alt="Ícone disquete">
-                            1 TB
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/arrow-icon.svg" alt="Ícone de seta">
-                            Tráfego Ilimitado
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/domain-icon.svg" alt="Ícone de domínio">
-                            Domínios Ilimitados
-                        </p>
-                        <p>
-                            <img class="icon" src="../img/ssl-icon.svg" alt="Ícone de SSL">
-                            Cert. SSL Grátis
-                        </p>
-                    </div>
-
-                    <button class="advanced-button">Contrate</button>
-                </div>
+        <section class="crumb">
+            <div class="crumb__item">
+                <a class="crumb__link" href="../index.html">Início</a> <strong class="crumb--strong-600">></strong> <a class="crumb__link" href="./hosting.html">Hospedagem</a>
             </div>
         </section>
 
-        <section class="resources">
-            <h2>Recursos Técnicos</h2>
+        <section class="hosting-plans">
+            <header class="hosting-plans-header">
+                <h2>Planos</h2>
+                <hr class="hr--blue">
+            </header>
+
+            <section class="hosting-plans-types">
+                <article class="card-hosting theme--basic load--appear-fall">
+                    <h3>Básico</h3>
+
+                    <div class="card-hosting__price">
+                        <p class="card-hosting__price--center">R$ <span class="card-hosting__price--font2">18,99</span>/mês</p>
+                    </div>
+
+                    <div class="card-hosting__description">
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/laptop-icon.svg" alt="Ícone de laptop">
+                            1 Site
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/savedisk-icon.svg" alt="Ícone de disquete">
+                            250 GB
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/arrow-icon.svg" alt="Ícone de tráfego">
+                            Tráfego Ilimitado
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/domain-icon.svg" alt="Ícone de domínio">
+                            25 Domínios
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/ssl-icon.svg" alt="Ícone de SSL">
+                            Cert. SSL Grátis
+                        </p>
+                    </div>
+
+                    <button class="card-hosting-button theme--basic-button">Contrate</button>
+                </article>
+
+                <article class="card-hosting theme--full load--appear-fall">
+                    <h3>Pleno</h3>
+
+                    <div class="card-hosting__price">
+                        <p class="card-hosting__price--center">R$ <span class="card-hosting__price--font2">23,99</span>/mês</p>
+                    </div>
+
+                    <div class="card-hosting__description">
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/laptop-icon.svg" alt="Ícone de laptop">
+                            3 Sites
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/savedisk-icon.svg" alt="Ícone de disquete">
+                            500 GB
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/arrow-icon.svg" alt="Ícone de seta">
+                            Tráfego Ilimitado
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/domain-icon.svg" alt="Ícone de domínio">
+                            50 Domínios
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/ssl-icon.svg" alt="Ícone de SSL">
+                            Cert. SSL Grátis
+                        </p>
+                    </div>
+
+                    <button class="card-hosting-button theme--full-button">Contrate</button>
+                </article>
+
+                <article class="card-hosting theme--advanced load--appear-fall">
+                    <h3>Avançado</h3>
+
+                    <div class="card-hosting__price">
+                        <p class="card-hosting__price--center">R$ <span class="card-hosting__price--font2">31,99</span>/mês</p>
+                    </div>
+
+                    <div class="card-hosting__description">
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/laptop-icon.svg" alt="Ícone de laptop">
+                            5 Sites
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/savedisk-icon.svg" alt="Ícone de disquete">
+                            1 TB
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/arrow-icon.svg" alt="Ícone de seta">
+                            Tráfego Ilimitado
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/domain-icon.svg" alt="Ícone de domínio">
+                            Domínios Ilimitados
+                        </p>
+                        <p class="card-hosting__text">
+                            <img class="card-hosting__icon" src="../img/services-icon/ssl-icon.svg" alt="Ícone de SSL">
+                            Cert. SSL Grátis
+                        </p>
+                    </div>
+
+                    <button class="card-hosting-button theme--advanced-button">Contrate</button>
+                </article>
+            </section>
+        </section>
+
+        <section class="hosting-resources">
+            <header class="hosting-resources-header">
+                <h2>Recursos Técnicos</h2>
+                <hr class="hr--white">
+            </header>
 
             <h3>Bancos de Dados</h3>
 
-            <div class="database">
-                <div class="mysql tech">
+            <section class="hosting-database">
+                <article class="card-hosting-tech theme--mysql scroll--appear-fall">
                     <h4>MySQL</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/mysql-icon.svg" alt="Ícone do MySQL">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/mysql-icon.svg" alt="Ícone do MySQL">
                     </div>
-                </div>
+                </article>
 
-                <div class="mongodb tech">
+                <article class="card-hosting-tech theme--mongodb scroll--appear-fall">
                     <h4>MongoDB</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/mongodb-icon.svg" alt="Ícone do MongoDB">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/mongodb-icon.svg" alt="Ícone do MongoDB">
                     </div>
-                </div>
+                </article>
 
-                <div class="postgresql tech">
+                <article class="card-hosting-tech theme--postgresql scroll--appear-fall">
                     <h4>PostgreSQL</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/postgresql-icon.svg" alt="Ícone do PostgreSQL">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/postgresql-icon.svg" alt="Ícone do PostgreSQL">
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
 
             <h3>Linguagens</h3>
 
-            <div class="languages">
-                <div class="node tech">
+            <section class="hosting-languages">
+                <article class="card-hosting-tech theme--node scroll--appear-fall">
                     <h4>Node.js</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/node-icon.svg" alt="Ícone do Node.js">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/node-icon.svg" alt="Ícone do Node.js">
                     </div>
-                </div>
+                </article>
 
-                <div class="php tech">
+                <article class="card-hosting-tech theme--php scroll--appear-fall">
                     <h4>PHP</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/php-icon.svg" alt="Ícone do PHP">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/php-icon.svg" alt="Ícone do PHP">
                     </div>
-                </div>
+                </article>
 
-                <div class="ruby tech">
+                <article class="card-hosting-tech theme--ruby scroll--appear-fall">
                     <h4>Ruby</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/ruby-icon.svg" alt="Ícone do Ruby">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/ruby-icon.svg" alt="Ícone do Ruby">
                     </div>
-                </div>
+                </article>
 
-                <div class="java tech">
+                <article class="card-hosting-tech theme--java scroll--appear-fall">
                     <h4>Java</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/java-icon.svg" alt="Ícone do Java">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/java-icon.svg" alt="Ícone do Java">
                     </div>
-                </div>
+                </article>
 
-                <div class="python tech">
+                <article class="card-hosting-tech theme--python scroll--appear-fall">
                     <h4>Python</h4>
 
-                    <div class="icon-2">
-                        <img src="../img/python-icon.svg" alt="Ícone do Python">
+                    <div class="card-hosting-tech__icon">
+                        <img src="../img/technologies-icon/python-icon.svg" alt="Ícone do Python">
                     </div>
-                </div>
-            </div>
+                </article>
+            </section>
         </section>
     </main>
 
-    <footer>
-        <div class="more-information">
-            <div class="informations">
-                <a href="../index.html"><img class="footer-logo" src="../img/cloud-master-black-white-logo.svg" alt="Logo CloudMaster"></a>
+    <footer class="footer">
+        <article class="footer-information">
+            <a class="footer-information__link" href="index.html">
+                <img class="footer-information__logo" src="../img/logo/cloud-master-black-white-logo.svg" alt="Logo CloudMaster">
+            </a>
 
-                <div class="social-networks">
-                    <a target="_blank" href="https://www.facebook.com/rya.matheus.9"><img src="../img/facebook-logo.svg" alt="Logo Facebook"></a>
-                    <a target="_blank" href="https://www.instagram.com/isryanmatheus"><img src="../img/instagram-logo.svg" alt="Logo Instagram"></a>
-                    <a target="_blank" href="https://github.com/RyanMatheuZ"><img src="../img/github-logo.svg" alt="Logo GitHub"></a>
-                </div>
+            <div class="social-networks">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                    <img src="../img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                    <img src="../img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
+                </a>
+                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                    <img src="../img/contacts-icon/github-logo.svg" alt="Logo GitHub">
+                </a>
             </div>
+        </article>
 
-            <div class="copyright">
-                <p><a target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira</p>
-            </div>
-        </div>
+        <article class="copyright">
+            <p class="copyright__text">
+                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+            </p>
+        </article>
     </footer>
+
+    <!-- Effects of appearing -->
+    <script src="../js/effect-appear.js"></script>
 </body>
 
 </html>
