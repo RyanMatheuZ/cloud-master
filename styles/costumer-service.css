@@ -10,6 +10,7 @@ body {
     font-family: Lexend, sans-serif;
     font-size: 16px;
     height: 100%;
+    scroll-behavior: smooth;
     width: 100%;
 }
 
@@ -244,6 +245,29 @@ label,
     justify-content: center;
 }
 .field--margin { margin: 0.5rem; }
+
+.arrow-anchor-top {
+    bottom: 25px;
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    right: 25px;
+    transition: 0.3s ease;
+    width: 50px;
+    z-index: 2;
+}
+.arrow-anchor-top:hover { 
+    transform: translateY(-20%); 
+    transition: 0.3s ease;
+}
+@media (max-width: 400px) {
+    .arrow-anchor-top {
+        bottom: 15px;
+        height: 30px;
+        right: 15px;
+        width: 30px;
+    }
+}
 
 .footer { background-color: #2A2F35; }
 .footer-information,
