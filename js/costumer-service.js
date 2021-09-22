@@ -1,5 +1,4 @@
-const form = document.querySelector('#form')
-form.addEventListener('submit', (event) => {
+document.querySelector('#form').addEventListener('submit', event => {
     event.preventDefault()
 
     const name = document.querySelector('#tname')

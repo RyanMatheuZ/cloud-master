@@ -5,114 +5,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="CloudMaster, empresa especializada em soluções de TI. Os serviços que você quer, do jeito que você precisa!">
+    <meta name="subject" content="Empresa com Soluções de TI">
+    <meta name="topic" content="Tecnologia da Informação">
+    <meta name="url" content="https://ryanmatheuz.github.io/cloud-master/">
+    <meta name="creator" content="Ryan Matheus de Oliveira">
+    <meta name="generator" content="Visual Studio Code">
+    <meta name="theme-color" content="#6C63FE">
+
     <title>Início | CloudMaster</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="./styles/home.css">
-    <!-- Effects of appearing -->
-    <link rel="stylesheet" href="./styles/effect-appear.css">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/logo/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="./img/logo/favicon.svg" type="image/svg">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
-    <!-- Google Search Console -->
-    <meta name="google-site-verification" content="0PhQEbiFIY9XvPOAvADjVQiJm8tDioAWszmZNRrHPJA"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/home.css">
+
+    <!-- Effects -->
+    <link rel="stylesheet" href="./styles/effect-appear.css">
+
+    <!-- Scripts -->
+    <script src="./js/effect-appear.js" defer></script>
 </head>
 
 <body>
     <header id="top" class="header">
-        <div class="header__item">
-            <a class="header__link" href="./index.html">
-                <img src="./img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
-            </a>
-        </div>
-
-        <nav class="nav">
-            <div class="nav__item">
-                <a class="nav__link nav__link--current-page" href="./index.html">Início</a>
-                <a class="nav__link" href="./pages/company.html">Empresa</a>
-                <a class="nav__link" href="./pages/costumer-service.html">SAC</a>
+        <div class="header__box max-width">
+            <div class="header__item">
+                <a class="header__link" href="./index.html">
+                    <img src="./img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
+                </a>
             </div>
-        </nav>
+    
+            <nav class="nav">
+                <div class="nav__item">
+                    <a class="nav__link nav__link--current-page" href="./index.html">Início</a>
+                    <a class="nav__link" href="./pages/company.html">Empresa</a>
+                    <a class="nav__link" href="./pages/costumer-service.html">SAC</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
-    <section class="section-initial">
-        <article class="section-initial__item">
-            <img src="./img/images/girl.svg" alt="Garota no computador" class="section-initial__img load--appear-grow">
-        </article>
-    </section>
-
     <main>
+        <section class="section-initial">
+            <article class="section-initial__item">
+                <img src="./img/images/girl.svg" alt="Garota no computador" class="section-initial__img load--appear-grow">
+            </article>
+        </section>
+
         <section class="service">
-            <header class="service-header">
-                <h2>Serviços</h2>
-                <hr class="hr--white">
+            <div class="service__box max-width">
+                <header class="service-header">
+                    <h2>Serviços</h2>
+                    <hr class="hr--white">
+                </header>
+    
+                <section class="service-group">
+                    <article class="service-group__item scroll--appear-fall">
+                        <h3>Desenvolvimento</h3>
+    
+                        <div class="service-group__icon">
+                            <img src="./img/services-icon/dev-icon.svg" alt="Ícone de desenvolvimento">
+                        </div>
+    
+                        <div class="service-group__description">
+                            <p>Sites de qualidade! Usando as mais novas e sofisticadas tecnologias</p>
+                        </div>
+    
+                        <div class="service-group__button-see-more">
+                            <a href="./pages/development.html">Veja mais</a>
+                        </div>
+                    </article>
+    
+                    <article class="service-group__item scroll--appear-fall">
+                        <h3>Hospedagem</h3>
+    
+                        <div class="service-group__icon">
+                            <img src="./img/services-icon/hosting-icon.svg" alt="Ícone de hospedagem">
+                        </div>
+    
+                        <div class="service-group__description">
+                            <p>Seu site na CloudMaster tem maior estabilidade e desempenho</p>
+                        </div>
+    
+                        <div class="service-group__button-see-more">
+                            <a href="./pages/hosting.html">Veja mais</a>
+                        </div>
+                    </article>
+    
+                    <article class="service-group__item scroll--appear-fall">
+                        <h3>Planos Wi-Fi</h3>
+    
+                        <div class="service-group__icon">
+                            <img src="./img/services-icon/wifi-icon.svg" alt="Ícone de wi-fi">
+                        </div>
+    
+                        <div class="service-group__description">
+                            <p>Wi-Fi veloz e com qualidade, usando sofisticados equipamentos</p>
+                        </div>
+    
+                        <div class="service-group__button-see-more">
+                            <a href="./pages/plans.html">Veja mais</a>
+                        </div>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section class="greetings scroll--appear-slip">
+            <header class="greetings-header">
+                <h2>Seja Bem Vindo!</h2>
+                <hr class="hr--blue">
             </header>
 
-            <section class="service-group">
-                <article class="service-group__item scroll--appear-fall">
-                    <h3>Desenvolvimento</h3>
+            <h4>Veja nosso site e encotre a sua solução</h4>
 
-                    <div class="service-group__icon">
-                        <img src="./img/services-icon/dev-icon.svg" alt="Ícone de desenvolvimento">
-                    </div>
+            <p class="greetings__text">A CloudMaster tem a solução para deixar você ou seu négocio online 24 horas por dia.</p>
 
-                    <div class="service-group__description">
-                        <p>Sites de qualidade! Usando as mais novas e sofisticadas tecnologias</p>
-                    </div>
-
-                    <div class="service-group__button-see-more">
-                        <a href="./pages/development.html">Veja mais</a>
-                    </div>
-                </article>
-
-                <article class="service-group__item scroll--appear-fall">
-                    <h3>Hospedagem</h3>
-
-                    <div class="service-group__icon">
-                        <img src="./img/services-icon/hosting-icon.svg" alt="Ícone de hospedagem">
-                    </div>
-
-                    <div class="service-group__description">
-                        <p>Seu site na CloudMaster tem maior estabilidade e desempenho</p>
-                    </div>
-
-                    <div class="service-group__button-see-more">
-                        <a href="./pages/hosting.html">Veja mais</a>
-                    </div>
-                </article>
-
-                <article class="service-group__item scroll--appear-fall">
-                    <h3>Planos Wi-Fi</h3>
-
-                    <div class="service-group__icon">
-                        <img src="./img/services-icon/wifi-icon.svg" alt="Ícone de wi-fi">
-                    </div>
-
-                    <div class="service-group__description">
-                        <p>Wi-Fi veloz e com qualidade, usando sofisticados equipamentos</p>
-                    </div>
-
-                    <div class="service-group__button-see-more">
-                        <a href="./pages/plans.html">Veja mais</a>
-                    </div>
-                </article>
-            </section>
+            <p class="greetings__text">Faça um site de qualidade e tenha resultados.</p>
         </section>
     </main>
-
-    <section class="greetings scroll--appear-slip">
-        <header class="greetings-header">
-            <h2>Seja Bem Vindo!</h2>
-            <hr class="hr--blue">
-        </header>
-
-        <h4>Veja nosso site e encotre a sua solução</h4>
-
-        <p class="greetings__text">A CloudMaster tem a solução para deixar você ou seu négocio online 24 horas por dia.</p>
-
-        <p class="greetings__text">Faça um site de qualidade e tenha resultados.</p>
-    </section>
 
     <footer class="footer">
         <article class="footer-information">
@@ -121,13 +139,13 @@
             </a>
 
             <div class="social-networks">
-                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/">
                     <img src="./img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/">
                     <img src="./img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                <a class="social-networks__link" target="_blank" href="https://github.com/">
                     <img src="./img/contacts-icon/github-logo.svg" alt="Logo GitHub">
                 </a>
             </div>
@@ -141,13 +159,10 @@
 
         <article class="copyright">
             <p class="copyright__text">
-                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+                &copy; CloudMaster - 2021
             </p>
         </article>
     </footer>
-
-    <!-- Effects of appearing -->
-    <script src="./js/effect-appear.js"></script>
 </body>
 
 </html>

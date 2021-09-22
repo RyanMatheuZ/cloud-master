@@ -5,125 +5,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="creator" content="Ryan Matheus de Oliveira">
+    <meta name="theme-color" content="#6C63FE">
+
     <title>Empresa | CloudMaster</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/company.css">
-    <!-- Effects of appearing -->
-    <link rel="stylesheet" href="../styles/effect-appear.css">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/svg">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/company.css">
+
+    <!-- Effects -->
+    <link rel="stylesheet" href="../styles/effect-appear.css">
+
+    <!-- Scripts -->
+    <script src="../js/effect-appear.js" defer></script>
 </head>
 
 <body>
     <header id="top" class="header">
-        <div class="header__item">
-            <a class="header__link" href="../index.html">
-                <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
-            </a>
-        </div>
-
-        <nav class="nav">
-            <div class="nav__item">
-                <a class="nav__link" href="../index.html">Início</a>
-                <a class="nav__link nav__link--current-page" href="../pages/company.html">Empresa</a>
-                <a class="nav__link" href="../pages/costumer-service.html">SAC</a>
+        <div class="header__box max-width">
+            <div class="header__item">
+                <a class="header__link" href="../index.html">
+                    <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
+                </a>
             </div>
-        </nav>
+    
+            <nav class="nav">
+                <div class="nav__item">
+                    <a class="nav__link" href="../index.html">Início</a>
+                    <a class="nav__link nav__link--current-page" href="../pages/company.html">Empresa</a>
+                    <a class="nav__link" href="../pages/costumer-service.html">SAC</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="our-history">
-            <article class="our-history-image">
-                <img src="../img/images/company-image.jpg" alt="Imagem do escritório" class="our-history-image__item load--appear-grow">
-            </article>
-
-            <article class="our-history-about">
-                <h1>Nossa história</h1>
-                <span><strong>Os serviços que você quer, do jeito que você precisa!</strong></span>
-
-                <p class="our-history-about__text">A nossa história tem início em 2021, ao sediarmos nossa matriz em Matão-SP, Brasil. Neste primeiro ano, já oferecíamos serviços de qualidade com conexões, sites e serviços de hospedagem de alto desempenho, o que nos garantiu uma expansão no mercado, na mesma velocidade de nossas conexões.</p>
-
-                <p class="our-history-about__text">Nos anos seguintes, evoluímos ainda mais, começamos então nossa expansão para as regiões de Araraquara, nos consagrando como uma das principais empresas no setor de tecnologia. Atendendo a demanda dos clientes destas regiões com acesso a internet de qualidade, assistência técnica especializada e desenvolvimento de sistemas.</p>
-
-                <p class="our-history-about__text">A CloudMaster oferece serviços de desenvolvimento de sistemas para vários segmentos, trabalhando com diversos tipos de projetos, hospedagem de sites com alto desempenho e planos Wi-Fi como ninguém nunca viu.</p>
-            </article>
+            <div class="our-history__box max-width">
+                <article class="our-history-image">
+                    <img src="../img/images/company-image.jpg" alt="Imagem do escritório" class="our-history-image__item load--appear-grow">
+                </article>
+    
+                <article class="our-history-about">
+                    <h1>Nossa história</h1>
+                    <span><strong>Os serviços que você quer, do jeito que você precisa!</strong></span>
+    
+                    <p class="our-history-about__text">A nossa história tem início em 2021, ao sediarmos nossa matriz em Matão-SP, Brasil. Neste primeiro ano, já oferecíamos serviços de qualidade com conexões, sites e serviços de hospedagem de alto desempenho, o que nos garantiu uma expansão no mercado, na mesma velocidade de nossas conexões.</p>
+    
+                    <p class="our-history-about__text">Nos anos seguintes, evoluímos ainda mais, começamos então nossa expansão para as regiões de Araraquara, nos consagrando como uma das principais empresas no setor de tecnologia. Atendendo a demanda dos clientes destas regiões com acesso a internet de qualidade, assistência técnica especializada e desenvolvimento de sistemas.</p>
+    
+                    <p class="our-history-about__text">A CloudMaster oferece serviços de desenvolvimento de sistemas para vários segmentos, trabalhando com diversos tipos de projetos, hospedagem de sites com alto desempenho e planos Wi-Fi como ninguém nunca viu.</p>
+                </article>
+            </div>
         </section>
 
         <section class="purposes">
-            <article class="purposes-card scroll--appear-fall">
-                <h2>Missão</h2>
-                <hr class="hr--white">
+            <div class="purposes__box max-width">
+                <article class="purposes-card scroll--appear-fall">
+                    <h2>Missão</h2>
+                    <hr class="hr--white">
 
-                <div class="purposes-card__img">
-                    <img src="../img/services-icon/mission-icon.svg" alt="Ícone missão">
-                </div>
+                    <div class="purposes-card__img">
+                        <img src="../img/services-icon/mission-icon.svg" alt="Ícone missão">
+                    </div>
 
-                <div class="purposes-card__text">
-                    <p>Conectar pessoas por meio da tecnologia, proporcionando desenvolvimento social, econômico e humano</p>
-                </div>
-            </article>
+                    <div class="purposes-card__text">
+                        <p>Conectar pessoas por meio da tecnologia, proporcionando desenvolvimento social, econômico e humano</p>
+                    </div>
+                </article>
 
-            <article class="purposes-card scroll--appear-fall">
-                <h2>Visão</h2>
-                <hr class="hr--white">
+                <article class="purposes-card scroll--appear-fall">
+                    <h2>Visão</h2>
+                    <hr class="hr--white">
 
-                <div class="purposes-card__img">
-                    <img src="../img/services-icon/vision-icon.svg" alt="Ícone visão">
-                </div>
+                    <div class="purposes-card__img">
+                        <img src="../img/services-icon/vision-icon.svg" alt="Ícone visão">
+                    </div>
 
-                <div class="purposes-card__text">
-                    <p>Atuar com excelência em todo o território nacional, conectando pessoas e negócios</p>
-                </div>
-            </article>
+                    <div class="purposes-card__text">
+                        <p>Atuar com excelência em todo o território nacional, conectando pessoas e negócios</p>
+                    </div>
+                </article>
 
-            <article class="purposes-card scroll--appear-fall">
-                <h2>Valores</h2>
-                <hr class="hr--white">
+                <article class="purposes-card scroll--appear-fall">
+                    <h2>Valores</h2>
+                    <hr class="hr--white">
 
-                <div class="purposes-card__img">
-                    <img src="../img/services-icon/values-icon.svg" alt="Ícone valores">
-                </div>
+                    <div class="purposes-card__img">
+                        <img src="../img/services-icon/values-icon.svg" alt="Ícone valores">
+                    </div>
 
-                <div class="purposes-card__text">
-                    <p>Inovação, tecnologia, proximidade, confiança e qualidade</p>
-                </div>
+                    <div class="purposes-card__text">
+                        <p>Inovação, tecnologia, proximidade, confiança e qualidade</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="message scroll--appear-slip">
+            <header class="message-header">
+                <h3>Cada dia um novo desafio</h3>
+                <hr class="hr--blue">
+            </header>
+
+            <article class="phrase">
+                <p class="phrase__text">
+                    "A vida está cheia de desafios que, 
+                    se aproveitados de forma criativa, transformam-se 
+                    em oportunidades."
+                </p>
+                
+                <p class="phrase__autor-name">- Marxwell Maltz</p>
             </article>
         </section>
     </main>
 
-    <section class="message scroll--appear-slip">
-        <header class="message-header">
-            <h3>Cada dia um novo desafio</h3>
-            <hr class="hr--blue">
-        </header>
-
-        <article class="phrase">
-            <p class="phrase__text">
-                "A vida está cheia de desafios que, 
-                se aproveitados de forma criativa, transformam-se 
-                em oportunidades."
-            </p>
-            <p class="phrase__autor-name">- Marxwell Maltz</p>
-        </article>
-    </section>
-
     <footer class="footer">
         <article class="footer-information">
-            <a class="footer-information__link" href="index.html">
+            <a class="footer-information__link" href="../index.html">
                 <img class="footer-information__logo" src="../img/logo/cloud-master-black-white-logo.svg" alt="Logo CloudMaster">
             </a>
 
             <div class="social-networks">
-                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/">
                     <img src="../img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/">
                     <img src="../img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                <a class="social-networks__link" target="_blank" href="https://github.com/">
                     <img src="../img/contacts-icon/github-logo.svg" alt="Logo GitHub">
                 </a>
             </div>
@@ -137,13 +154,10 @@
 
         <article class="copyright">
             <p class="copyright__text">
-                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+                &copy; CloudMaster - 2021
             </p>
         </article>
     </footer>
-
-    <!-- Effects of appearing -->
-    <script src="../js/effect-appear.js"></script>
 </body>
 
 </html>

@@ -5,33 +5,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="creator" content="Ryan Matheus de Oliveira">
+    <meta name="theme-color" content="#6C63FE">
+
     <title>Suporte | CloudMaster</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/costumer-service.css">
-    <!-- Effects of appearing -->
-    <link rel="stylesheet" href="../styles/effect-appear.css">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/svg">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/costumer-service.css">
+
+    <!-- Effects -->
+    <link rel="stylesheet" href="../styles/effect-appear.css">
+
+    <!-- Scripts -->
+    <script src="../js/effect-appear.js" defer></script>
+    <script src="../js/costumer-service.js" defer></script>
 </head>
 
 <body>
     <header id="top" class="header">
-        <div class="header__item">
-            <a class="header__link" href="../index.html">
-                <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
-            </a>
-        </div>
-
-        <nav class="nav">
-            <div class="nav__item">
-                <a class="nav__link" href="../index.html">Início</a>
-                <a class="nav__link" href="../pages/company.html">Empresa</a>
-                <a class="nav__link nav__link--current-page" href="../pages/costumer-service.html">SAC</a>
+        <div class="header__box max-width">
+            <div class="header__item">
+                <a class="header__link" href="../index.html">
+                    <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
+                </a>
             </div>
-        </nav>
+    
+            <nav class="nav">
+                <div class="nav__item">
+                    <a class="nav__link" href="../index.html">Início</a>
+                    <a class="nav__link" href="../pages/company.html">Empresa</a>
+                    <a class="nav__link nav__link--current-page" href="../pages/costumer-service.html">SAC</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
@@ -42,53 +55,55 @@
             </header>
             
             <section class="support-types">
-                <article class="support-card load--appear-fall">
-                    <h3>Suporte Técnico</h3>
-        
-                    <div class="support-card__icon">
-                        <img src="../img/contacts-icon/support-icon.svg" alt="Ícone do suporte técnico">
-                    </div>
-        
-                    <div class="support-card__email">
-                        <p>suporte@cmaster.com.br</p>
-                    </div>
-                </article>
+                <div class="support-types__box max-width">
+                    <article class="support-card load--appear-fall">
+                        <h3>Suporte Técnico</h3>
+            
+                        <div class="support-card__icon">
+                            <img src="../img/contacts-icon/support-icon.svg" alt="Ícone do suporte técnico">
+                        </div>
+            
+                        <div class="support-card__email">
+                            <p>suporte@cmaster.com.br</p>
+                        </div>
+                    </article>
 
-                <article class="support-card load--appear-fall">
-                    <h3>Telefone</h3>
+                    <article class="support-card load--appear-fall">
+                        <h3>Telefone</h3>
 
-                    <div class="support-card__icon">
-                        <img src="../img/contacts-icon/telephone-icon.svg" alt="Ícone de telefone">
-                    </div>
+                        <div class="support-card__icon">
+                            <img src="../img/contacts-icon/telephone-icon.svg" alt="Ícone de telefone">
+                        </div>
 
-                    <div class="support-card__contact">
-                        <p>(16) 86914-7262</p>
-                    </div>
-                </article>
+                        <div class="support-card__contact">
+                            <p>(16) 86914-7262</p>
+                        </div>
+                    </article>
 
-                <article class="support-card load--appear-fall">
-                    <h3>Contato Comercial</h3>
-        
-                    <div class="support-card__icon">
-                        <img src="../img/contacts-icon/commercial-icon.svg" alt="Ícone do contato comercial">
-                    </div>
-        
-                    <div class="support-card__email">
-                        <p>comercial@cmaster.com.br</p>
-                    </div>
-                </article>
+                    <article class="support-card load--appear-fall">
+                        <h3>Contato Comercial</h3>
+            
+                        <div class="support-card__icon">
+                            <img src="../img/contacts-icon/commercial-icon.svg" alt="Ícone do contato comercial">
+                        </div>
+            
+                        <div class="support-card__email">
+                            <p>comercial@cmaster.com.br</p>
+                        </div>
+                    </article>
 
-                <article class="support-card load--appear-fall">
-                    <h3>WhatsApp</h3>
+                    <article class="support-card load--appear-fall">
+                        <h3>WhatsApp</h3>
 
-                    <div class="support-card__icon">
-                        <img src="../img/contacts-icon/whatsapp-logo.svg" alt="Logo WhatsApp">
-                    </div>
+                        <div class="support-card__icon">
+                            <img src="../img/contacts-icon/whatsapp-logo.svg" alt="Logo WhatsApp">
+                        </div>
 
-                    <div class="support-card__contact">
-                        <p>(16) 98489-2846</p>
-                    </div>
-                </article>
+                        <div class="support-card__contact">
+                            <p>(16) 98489-2846</p>
+                        </div>
+                    </article>
+                </div>  
             </section>
         </section>
 
@@ -138,18 +153,18 @@
 
     <footer class="footer">
         <article class="footer-information">
-            <a class="footer-information__link" href="index.html">
+            <a class="footer-information__link" href="../index.html">
                 <img class="footer-information__logo" src="../img/logo/cloud-master-black-white-logo.svg" alt="Logo CloudMaster">
             </a>
 
             <div class="social-networks">
-                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/">
                     <img src="../img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/">
                     <img src="../img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                <a class="social-networks__link" target="_blank" href="https://github.com/">
                     <img src="../img/contacts-icon/github-logo.svg" alt="Logo GitHub">
                 </a>
             </div>
@@ -163,15 +178,10 @@
 
         <article class="copyright">
             <p class="copyright__text">
-                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+                &copy; CloudMaster - 2021
             </p>
         </article>
     </footer>
-
-    <!-- Form validation -->
-    <script src="../js/costumer-service.js"></script>
-    <!-- Effects of appearing -->
-    <script src="../js/effect-appear.js"></script>
 </body>
 
 </html>

@@ -5,38 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="creator" content="Ryan Matheus de Oliveira">
+    <meta name="theme-color" content="#6C63FE">
+
     <title>Desenvolvimento | CloudMaster</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/development.css">
-    <!-- Effects of appearing -->
-    <link rel="stylesheet" href="../styles/effect-appear.css">
+
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/x-icon">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="../img/logo/favicon.svg" type="image/svg">
+
+    <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend&display=swap">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/development.css">
+
+    <!-- Effects -->
+    <link rel="stylesheet" href="../styles/effect-appear.css">
+
+    <!-- Scripts -->
+    <script src="../js/effect-appear.js" defer></script>
 </head>
 
 <body>
     <header id="top" class="header">
-        <div class="header__item">
-            <a class="header__link" href="../index.html">
-                <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
-            </a>
-        </div>
-
-        <nav class="nav">
-            <div class="nav__item">
-                <a class="nav__link nav__link--current-page" href="../index.html">Início</a>
-                <a class="nav__link" href="../pages/company.html">Empresa</a>
-                <a class="nav__link" href="../pages/costumer-service.html">SAC</a>
+        <div class="header__box max-width">
+            <div class="header__item">
+                <a class="header__link" href="../index.html">
+                    <img src="../img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
+                </a>
             </div>
-        </nav>
+    
+            <nav class="nav">
+                <div class="nav__item">
+                    <a class="nav__link nav__link--current-page" href="../index.html">Início</a>
+                    <a class="nav__link" href="../pages/company.html">Empresa</a>
+                    <a class="nav__link" href="../pages/costumer-service.html">SAC</a>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="crumb">
-            <div class="crumb__item">
+            <div class="crumb__item max-width">
                 <a class="crumb__link" href="../index.html">Início</a> <strong class="crumb--strong-600">></strong> <a class="crumb__link" href="./development.html">Desenvolvimento</a>
             </div>
         </section>
@@ -48,41 +60,43 @@
             </header>
 
             <section class="development-services-types">
-                <article class="card-services theme--construction load--appear-fall">
-                    <h3>Construção</h3>
+                <div class="development-services-types__box max-width">
+                    <article class="card-services theme--construction load--appear-fall">
+                        <h3>Construção</h3>
 
-                    <div class="card-services__icon">
-                        <img src="../img/services-icon/helmet-icon.svg" alt="Ícone de capacete">
-                    </div>
+                        <div class="card-services__icon">
+                            <img src="../img/services-icon/helmet-icon.svg" alt="Ícone de capacete">
+                        </div>
 
-                    <div class="card-services__description">
-                        <p>Atuamos na construção de sites do início ao fim, com ótimas tecnologias</p>
-                    </div>
-                </article>
+                        <div class="card-services__description">
+                            <p>Atuamos na construção de sites do início ao fim, com ótimas tecnologias</p>
+                        </div>
+                    </article>
 
-                <article class="card-services theme--prototyping load--appear-fall">
-                    <h3>Prototipação</h3>
+                    <article class="card-services theme--prototyping load--appear-fall">
+                        <h3>Prototipação</h3>
 
-                    <div class="card-services__icon">
-                        <img src="../img/services-icon/prototype-icon.svg" alt="Ícone de protótipo">
-                    </div>
+                        <div class="card-services__icon">
+                            <img src="../img/services-icon/prototype-icon.svg" alt="Ícone de protótipo">
+                        </div>
 
-                    <div class="card-services__description">
-                        <p>Podemos desenvolver o protótipo de seu site facilmente</p>
-                    </div>
-                </article>
+                        <div class="card-services__description">
+                            <p>Podemos desenvolver o protótipo de seu site facilmente</p>
+                        </div>
+                    </article>
 
-                <article class="card-services theme--maintenance load--appear-fall">
-                    <h3>Manutenção</h3>
+                    <article class="card-services theme--maintenance load--appear-fall">
+                        <h3>Manutenção</h3>
 
-                    <div class="card-services__icon">
-                        <img src="../img/services-icon/tools-icon.svg" alt="Ícone de ferramentas">
-                    </div>
+                        <div class="card-services__icon">
+                            <img src="../img/services-icon/tools-icon.svg" alt="Ícone de ferramentas">
+                        </div>
 
-                    <div class="card-services__description">
-                        <p>Realizamos também manutenções ou atualizações em seus sites</p>
-                    </div>
-                </article>
+                        <div class="card-services__description">
+                            <p>Realizamos também manutenções ou atualizações em seus sites</p>
+                        </div>
+                    </article>
+                </div>
             </section>
         </section>
 
@@ -93,121 +107,123 @@
             </header>
 
             <section class="development-websites-types">
-                <article class="card-websites theme--landing-page scroll--appear-fall">
-                    <h3>Landing Page</h3>
+                <div class="development-websites-types__box max-width">
+                    <article class="card-websites theme--landing-page scroll--appear-fall">
+                        <h3>Landing Page</h3>
 
-                    <div class="card-websites__price">
-                        <p>R$ <span>1.000+</span></p>
-                    </div>
+                        <div class="card-websites__price">
+                            <p>R$ <span>1.000+</span></p>
+                        </div>
 
-                    <div class="card-websites__description">
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/multimedia-icon.svg" alt="Ícone de Multimídia">
-                            Multimídias
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/image-icon.svg" alt="Ícone de Foto">
-                            Estoque de Fotos
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/design-icon.svg" alt="Íconde de Design">
-                            Design de Qualidade
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
-                            Prazo: +20 Dias
-                        </p>
-                    </div>
+                        <div class="card-websites__description">
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/multimedia-icon.svg" alt="Ícone de Multimídia">
+                                Multimídias
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/image-icon.svg" alt="Ícone de Foto">
+                                Estoque de Fotos
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/design-icon.svg" alt="Íconde de Design">
+                                Design de Qualidade
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
+                                Prazo: +20 Dias
+                            </p>
+                        </div>
 
-                    <button class="card-websites__button theme--landing-page-button">Contrate</button>
-                </article>
+                        <button class="card-websites__button theme--landing-page-button">Contrate</button>
+                    </article>
 
-                <article class="card-websites theme--site-static scroll--appear-fall">
-                    <h3>Site Estático</h3>
+                    <article class="card-websites theme--site-static scroll--appear-fall">
+                        <h3>Site Estático</h3>
 
-                    <div class="card-websites__price">
-                        <p>R$ <span>1.200+</span></p>
-                    </div>
+                        <div class="card-websites__price">
+                            <p>R$ <span>1.200+</span></p>
+                        </div>
 
-                    <div class="card-websites__description">
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/multimedia-icon.svg" alt="Ícone de Multimídia">
-                            Multimídias
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/image-icon.svg" alt="Ícone de Foto">
-                            Estoque de Fotos
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/design-icon.svg" alt="Íconde de Design">
-                            Design de Qualidade
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
-                            Prazo: +30 Dias
-                        </p>
-                    </div>
+                        <div class="card-websites__description">
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/multimedia-icon.svg" alt="Ícone de Multimídia">
+                                Multimídias
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/image-icon.svg" alt="Ícone de Foto">
+                                Estoque de Fotos
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/design-icon.svg" alt="Íconde de Design">
+                                Design de Qualidade
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
+                                Prazo: +30 Dias
+                            </p>
+                        </div>
 
-                    <button class="card-websites__button theme--site-static-button">Contrate</button>
-                </article>
+                        <button class="card-websites__button theme--site-static-button">Contrate</button>
+                    </article>
 
-                <article class="card-websites theme--spa scroll--appear-fall">
-                    <h3>Single-Page</h3>
+                    <article class="card-websites theme--spa scroll--appear-fall">
+                        <h3>Single-Page</h3>
 
-                    <div class="card-websites__price">
-                        <p>R$ <span>3.500+</span></p>
-                    </div>
+                        <div class="card-websites__price">
+                            <p>R$ <span>3.500+</span></p>
+                        </div>
 
-                    <div class="card-websites__description">
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/panel-icon.svg" alt="Ícone de Painel">
-                            Painel de Controle
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/dev-icon.svg" alt="Ícone de Desenvolvimento">
-                            Desenv. Avançado
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/explosion-icon.svg" alt="Íconde de Interatividade">
-                            Interatividade
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
-                            Prazo: +90 Dias
-                        </p>
-                    </div>
+                        <div class="card-websites__description">
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/panel-icon.svg" alt="Ícone de Painel">
+                                Painel de Controle
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/dev-icon.svg" alt="Ícone de Desenvolvimento">
+                                Desenv. Avançado
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/explosion-icon.svg" alt="Íconde de Interatividade">
+                                Interatividade
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
+                                Prazo: +90 Dias
+                            </p>
+                        </div>
 
-                    <button class="card-websites__button theme--spa-button">Contrate</button>
-                </article>
+                        <button class="card-websites__button theme--spa-button">Contrate</button>
+                    </article>
 
-                <article class="card-websites theme--ecommerce scroll--appear-fall">
-                    <h3>E-commerce</h3>
+                    <article class="card-websites theme--ecommerce scroll--appear-fall">
+                        <h3>E-commerce</h3>
 
-                    <div class="card-websites__price">
-                        <p>R$ <span>5.000+</span></p>
-                    </div>
+                        <div class="card-websites__price">
+                            <p>R$ <span>5.000+</span></p>
+                        </div>
 
-                    <div class="card-websites__description">
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/panel-icon.svg" alt="Ícone de Painel">
-                            Painel de Controle
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/description-icon.svg" alt="Ícone de Descrição">
-                            Descr. de Produtos
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/calculate-icon.svg" alt="Íconde de Cálculo">
-                            Cálculo de Vendas
-                        </p>
-                        <p class="card-websites__description-text">
-                            <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
-                            Prazo: +100 Dias
-                        </p>
-                    </div>
+                        <div class="card-websites__description">
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/panel-icon.svg" alt="Ícone de Painel">
+                                Painel de Controle
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/description-icon.svg" alt="Ícone de Descrição">
+                                Descr. de Produtos
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/calculate-icon.svg" alt="Íconde de Cálculo">
+                                Cálculo de Vendas
+                            </p>
+                            <p class="card-websites__description-text">
+                                <img class="card-websites__icon" src="../img/services-icon/clock-icon.svg" alt="Ícone de Duração do Projeto">
+                                Prazo: +100 Dias
+                            </p>
+                        </div>
 
-                    <button class="card-websites__button theme--ecommerce-button">Contrate</button>
-                </article>
+                        <button class="card-websites__button theme--ecommerce-button">Contrate</button>
+                    </article>
+                </div>
             </section>
         </section>
 
@@ -218,95 +234,97 @@
             </header>
 
             <section class="development-tech-types">
-                <article class="card-tech theme--html scroll--appear-fall">
-                    <h3>HTML 5</h3>
+                <div class="development-tech-types__box max-width">
+                    <article class="card-tech theme--html scroll--appear-fall">
+                        <h3>HTML 5</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/html-icon.svg" alt="Ícone do HTML">
-                    </div>
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/html-icon.svg" alt="Ícone do HTML">
+                        </div>
+                    </article>
 
-                <article class="card-tech theme--css scroll--appear-fall">
-                    <h3>CSS 3</h3>
+                    <article class="card-tech theme--css scroll--appear-fall">
+                        <h3>CSS 3</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/css-icon.svg" alt="Ícone do CSS">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/css-icon.svg" alt="Ícone do CSS">
+                        </div>  
+                    </article>
 
-                <article class="card-tech theme--js scroll--appear-fall">
-                    <h3>JavaScript</h3>
+                    <article class="card-tech theme--js scroll--appear-fall">
+                        <h3>JavaScript</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/js-icon.svg" alt="Ícone do JavaScript">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/js-icon.svg" alt="Ícone do JavaScript">
+                        </div>  
+                    </article>
 
-                <article class="card-tech theme--bootstrap scroll--appear-fall">
-                    <h3>Bootstrap</h3>
+                    <article class="card-tech theme--bootstrap scroll--appear-fall">
+                        <h3>Bootstrap</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/bootstrap-icon.svg" alt="Ícone do Bootstrap">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/bootstrap-icon.svg" alt="Ícone do Bootstrap">
+                        </div>  
+                    </article>
 
-                <article class="card-tech theme--sass scroll--appear-fall">
-                    <h3>Sass</h3>
+                    <article class="card-tech theme--sass scroll--appear-fall">
+                        <h3>Sass</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/sass-icon.svg" alt="Ícone do Sass">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/sass-icon.svg" alt="Ícone do Sass">
+                        </div>  
+                    </article>
 
-                <article class="card-tech theme--less scroll--appear-fall">
-                    <h3>Less</h3>
+                    <article class="card-tech theme--less scroll--appear-fall">
+                        <h3>Less</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/less-icon.svg" alt="Ícone do Less">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/less-icon.svg" alt="Ícone do Less">
+                        </div>  
+                    </article>
 
-                <article class="card-tech theme--react scroll--appear-fall">
-                    <h3>React.js</h3>
+                    <article class="card-tech theme--react scroll--appear-fall">
+                        <h3>React.js</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/react-icon.svg" alt="Ícone do React.js">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/react-icon.svg" alt="Ícone do React.js">
+                        </div>  
+                    </article>
 
-                <article class="card-tech theme--vue scroll--appear-fall">
-                    <h3>Vue.js</h3>
+                    <article class="card-tech theme--vue scroll--appear-fall">
+                        <h3>Vue.js</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/vue-icon.svg" alt="Ícone do Vue.js">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/vue-icon.svg" alt="Ícone do Vue.js">
+                        </div>  
+                    </article>
 
-                <article class="card-tech theme--angular scroll--appear-fall">
-                    <h3>Angular</h3>
+                    <article class="card-tech theme--angular scroll--appear-fall">
+                        <h3>Angular</h3>
 
-                    <div class="card-tech__icon">
-                        <img src="../img/technologies-icon/angular-icon.svg" alt="Ícone do Angular">
-                    </div>  
-                </article>
+                        <div class="card-tech__icon">
+                            <img src="../img/technologies-icon/angular-icon.svg" alt="Ícone do Angular">
+                        </div>  
+                    </article>
+                </div>
             </section>
         </section>
     </main>
 
     <footer class="footer">
         <article class="footer-information">
-            <a class="footer-information__link" href="index.html">
+            <a class="footer-information__link" href="../index.html">
                 <img class="footer-information__logo" src="../img/logo/cloud-master-black-white-logo.svg" alt="Logo CloudMaster">
             </a>
 
             <div class="social-networks">
-                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/rya.matheus.9">
+                <a class="social-networks__link" target="_blank" href="https://www.facebook.com/">
                     <img src="../img/contacts-icon/facebook-logo.svg" alt="Logo Facebook">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/isryanmatheus">
+                <a class="social-networks__link" target="_blank" href="https://www.instagram.com/">
                     <img src="../img/contacts-icon/instagram-logo.svg" alt="Logo Instagram">
                 </a>
-                <a class="social-networks__link" target="_blank" href="https://github.com/RyanMatheuZ">
+                <a class="social-networks__link" target="_blank" href="https://github.com/">
                     <img src="../img/contacts-icon/github-logo.svg" alt="Logo GitHub">
                 </a>
             </div>
@@ -320,13 +338,10 @@
 
         <article class="copyright">
             <p class="copyright__text">
-                <a class="copyright__link" target="_blank" href="https://pt.wikipedia.org/wiki/Licen%C3%A7a_MIT">MIT License</a> - Ryan Oliveira
+                &copy; CloudMaster - 2021
             </p>
         </article>
     </footer>
-
-    <!-- Effects of appearing -->
-    <script src="../js/effect-appear.js"></script>
 </body>
 
 </html>
