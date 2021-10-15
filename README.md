@@ -1,4 +1,4 @@
-<img width="80" src="./img/logo/cloud-master-logo.svg" alt="Logo CloudMaster">
+<img width="80" src="./img/logo/cloud-master-logo.svg" alt="Logo CloudMaster" title="Logo CloudMaster">
 
 # CloudMaster
 
@@ -8,7 +8,7 @@ CloudMaster is a personal project, about a fictional company with website develo
 ### Technologies / Softwares
 - HTML 5
 - CSS 3
-- JavaScript (ECMAScript 2015+)
+- jQuery (3.6)
 - Adobe Illustrator (25.2)
 
 ### Architecture / Conventions
