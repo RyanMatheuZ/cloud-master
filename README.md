@@ -8,7 +8,7 @@ CloudMaster is a personal project, about a fictional company with website develo
 ### Technologies / Softwares
 - HTML 5
 - CSS 3
-- jQuery (3.6)
+- JavaScript (ECMAScript 2015+)
 - Adobe Illustrator (25.2)
 
 ### Architecture / Conventions
