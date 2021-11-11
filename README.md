@@ -3,7 +3,7 @@
 # CloudMaster
 
 ### About
-CloudMaster is a personal project, about a fictional company with website development services, hosting plans and Wi-Fi.
+CloudMaster is a personal project, about a fictitious company with website development services, hosting plans and Wi-Fi.
 
 ### Technologies / Softwares
 - HTML 5
